@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>球队关系星图</title>
+<script src="vis-network.min.js"></script>
+<style>
+:root{--bg:#0d1117;--b2:#161b22;--bd:#30363d;--tx:#e6edf3;--mt:#8b949e;--rd:#ff4d4f;--gn:#56d364;--gd:#e3b341;--bl:#58a6ff}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;height:100vh;display:flex;flex-direction:column;overflow:hidden;user-select:none}
+
+#hd{height:50px;padding:0 12px;display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,#161b22,#0d1117);border-bottom:1px solid var(--bd);flex-shrink:0;z-index:10;position:relative;overflow:visible}
+#hd h1{font-size:16px;font-weight:700;background:linear-gradient(135deg,#ff4d4f,#e3b341,#56d364);-webkit-background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap}
+
+#tbtn{padding:5px 12px;border-radius:8px;background:#0d1117;border:1px solid var(--bd);color:var(--tx);font-size:11px;cursor:pointer;white-space:nowrap}
+#tbtn:hover{border-color:var(--bl)}
+#tmenu{display:none;position:absolute;top:48px;left:10px;background:#161b22;border:1px solid var(--bd);border-radius:8px;z-index:200;padding:4px;columns:3;column-gap:4px;max-height:60vh;overflow-y:auto}
+#tmenu.show{display:block}
+#tmenu button{display:block;width:100%;padding:6px 14px;background:transparent;border:none;color:var(--tx);font-size:12px;cursor:pointer;text-align:left;white-space:nowrap;border-radius:4px}
+#tmenu button:hover{background:#1c2333}
+#tmenu button.on{background:#1f6feb22;color:var(--bl)}
+
+#sr{position:relative;flex:1;max-width:150px;overflow:visible}
+#sr input{width:100%;padding:5px 8px 5px 26px;border-radius:14px;background:#0d1117;border:1px solid var(--bd);color:var(--tx);font-size:11px;outline:none}
+#sr input:focus{border-color:var(--bl)}
+#sr .si{position:absolute;left:7px;top:50%;transform:translateY(-50%);font-size:12px;pointer-events:none}
+#sdd{display:none;position:absolute;top:100%;left:0;right:0;margin-top:2px;background:#161b22;border:1px solid var(--bd);border-radius:6px;max-height:200px;overflow-y:auto;z-index:9999}
+#sdd.show{display:block}
+#sdd div{padding:6px 10px;cursor:pointer;font-size:11px;border-bottom:1px solid #21262d;display:flex;align-items:center;gap:6px}
+#sdd div:hover{background:#1c2333}
+.sdot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+
+#fg{display:flex;gap:2px}
+#fg button{padding:3px 6px;border-radius:8px;border:1px solid var(--bd);background:transparent;color:var(--mt);font-size:10px;cursor:pointer;white-space:nowrap}
+#fg button.on{background:#1f6feb22;border-color:var(--bl);color:var(--bl)}
+#dt{padding:4px 10px;border-radius:12px;border:1px solid #ff4d4f44;background:transparent;color:var(--rd);font-size:10px;cursor:pointer;white-space:nowrap}
+#dt.on{background:#ff4d4f22;border-color:var(--rd);box-shadow:0 0 8px rgba(255,77,79,0.25)}
+#lg{display:flex;gap:8px}
+#lg span{display:flex;align-items:center;gap:3px;font-size:9px;color:var(--mt)}
+.ld{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.ld.r{background:var(--rd);box-shadow:0 0 4px rgba(255,77,79,0.5)}
+.ld.gd{background:var(--gd);box-shadow:0 0 3px rgba(227,179,65,0.5)}
+.ld.g{background:var(--gn);box-shadow:0 0 2px rgba(86,211,100,0.4)}
+.ld.w{background:var(--mt)}
+
+#nc{flex:1;width:100%;min-height:300px;position:relative;cursor:grab}
+#nc:active{cursor:grabbing}
+#sc{position:absolute;inset:0;pointer-events:none;z-index:0}
+#lo{position:absolute;inset:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:20;transition:opacity .4s}
+#lo.done{opacity:0;pointer-events:none}
+.spn{width:36px;height:36px;border:3px solid var(--bd);border-top-color:var(--gd);border-radius:50%;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+#ls{margin-top:10px;font-size:12px;color:var(--mt)}
+#fcs{display:none;position:absolute;top:10px;left:50%;transform:translateX(-50%);background:rgba(22,27,34,0.95);border:1px solid var(--bd);border-radius:6px;padding:4px 10px;font-size:11px;color:#f1e05a;z-index:6;pointer-events:none}
+#fcs.on{display:block}
+#fbt{position:absolute;bottom:10px;right:10px;z-index:5;display:flex;flex-direction:column;gap:2px}
+#fbt button{width:28px;height:28px;border-radius:50%;border:1px solid var(--bd);background:rgba(22,27,34,0.9);color:var(--tx);font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+#bp{height:140px;min-height:140px;background:linear-gradient(180deg,#161b22,#131820);border-top:1px solid #30363d;padding:12px 20px;display:flex;gap:24px;flex-shrink:0;z-index:10}
+#bpf{display:flex;align-items:flex-start;gap:14px;flex-shrink:0;width:200px;padding-right:20px;border-right:1px solid #21262d}
+#bpa{width:64px;height:64px;border-radius:50%;background-size:cover;background-position:top center;background-color:#21262d;flex-shrink:0;border:2px solid var(--bl);box-shadow:0 0 16px rgba(88,166,255,0.25)}
+#bpn{font-size:16px;font-weight:700;color:#fff}
+#bpe{font-size:11px;color:var(--mt);margin-top:2px}
+#bph{font-size:11px;color:#f1e05a;margin-top:3px}
+#bpclub{font-size:11px;color:#56d364;margin-top:2px}
+#bpsalary{font-size:11px;color:var(--mt);margin-top:1px}
+#bpr{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:8px}
+#bpr .tl{font-size:10px;color:var(--mt);margin-bottom:2px}
+#bpintro{font-size:13px;line-height:1.8;color:#d0d7de;flex:1}
+#bpintro b{color:#ffa19c}
+#bpl{list-style:none;display:flex;flex-wrap:wrap;gap:4px 14px;font-size:10px;border-top:1px solid #21262d;padding-top:6px}
+#bpl li{display:flex;align-items:center;white-space:nowrap;cursor:pointer;color:var(--mt)}
+#bpl li:hover{color:#fff}
+.d{width:6px;height:6px;border-radius:50%;margin-right:4px;flex-shrink:0}
+.d.r{background:var(--rd);box-shadow:0 0 3px rgba(255,77,79,0.5)}
+.d.gd{background:var(--gd);box-shadow:0 0 3px rgba(227,179,65,0.4)}
+.d.g{background:var(--gn);box-shadow:0 0 2px rgba(86,211,100,0.4)}
+.d.w{background:var(--mt)}
+#mo{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:1000;backdrop-filter:blur(4px);justify-content:center;align-items:center}
+#mo.on{display:flex}
+#md{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:linear-gradient(160deg,#1a1f2b,#161b22);border:1px solid #30363d;border-radius:14px;padding:24px 20px 18px;width:500px;max-height:75vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.8);z-index:1001}
+#md::-webkit-scrollbar{width:4px}
+#md::-webkit-scrollbar-thumb{background:#30363d;border-radius:2px}
+#mc{position:absolute;top:10px;right:12px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.05);border:1px solid #30363d;color:var(--mt);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center}
+#mc:hover{background:rgba(255,77,79,0.2);color:#fff;border-color:var(--rd)}
+#mtag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:1px;background:#ff4d4f22;color:#ff4d4f;margin-bottom:6px}
+#mt{font-size:18px;font-weight:700;color:#ff4d4f;margin-bottom:4px;padding-right:30px}
+#mp{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mt);padding-bottom:10px;border-bottom:1px solid #21262d;margin-bottom:10px}
+#mcx{font-size:13px;line-height:1.8;color:#d0d7de}
+#mcx b{color:#ffa19c}
+#msrc{margin-top:12px;padding:8px 10px;background:#0d1117;border-radius:6px;border-left:3px solid #e3b341;font-size:10px;color:var(--mt);line-height:1.7}
+#mbo{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:500}
+#mbs{display:none;position:fixed;bottom:0;left:0;right:0;background:linear-gradient(180deg,#161b22,#0d1117);border-top:1px solid #30363d;border-radius:14px 14px 0 0;z-index:501;max-height:55vh;overflow-y:auto;padding-bottom:env(safe-area-inset-bottom,10px);transform:translateY(100%);transition:transform .3s cubic-bezier(.16,1,.3,1)}
+#mbs.on{transform:translateY(0)}
+#mh{width:28px;height:3px;background:#30363d;border-radius:2px;margin:8px auto 6px}
+#mbf{display:flex;align-items:center;gap:10px;padding:0 14px 10px;border-bottom:1px solid #21262d}
+#mba{width:44px;height:44px;border-radius:50%;background-size:cover;background-position:top center;background-color:#21262d;flex-shrink:0;border:2px solid var(--bl)}
+#mbn{font-size:15px;font-weight:700}
+#mbe{font-size:10px;color:var(--mt)}
+#mbh{font-size:10px;color:#f1e05a}
+#mbl{list-style:none;padding:6px 14px}
+#mbl li{display:flex;align-items:center;padding:5px 0;border-bottom:1px solid #21262d;cursor:pointer;font-size:12px}
+#mbc{display:block;width:100%;padding:10px;text-align:center;color:var(--mt);font-size:12px;background:transparent;border:none;border-top:1px solid #21262d;cursor:pointer}
+@media (max-width:768px){#hd{height:44px;padding:0 6px;gap:4px}#hd h1{font-size:12px}#sr{max-width:100px}#sr input{font-size:10px}#fg button{font-size:9px;padding:2px 4px}#dt{font-size:9px;padding:3px 6px}#lg{display:none}#bp{display:none}#md{width:92vw;max-width:380px;padding:16px 12px;max-height:80vh}#mt{font-size:16px}#mcx{font-size:12px;line-height:1.7}}
+div.vis-tooltip{padding:12px 16px!important;font-size:12px!important;color:#e6edf3!important;background:rgba(22,27,34,0.96)!important;border:1px solid #30363d!important;border-radius:8px!important;box-shadow:0 8px 24px rgba(0,0,0,0.85)!important;line-height:1.8!important;backdrop-filter:blur(10px)!important;pointer-events:none!important;max-width:260px!important;white-space:normal!important}
+</style>
+</head>
+<body>
+
+<div id="hd">
+    <h1 id="ttl">世界杯球队关系星图</h1>
+    <div style="position:relative">
+        <button id="tbtn" onclick="document.getElementById('tmenu').classList.toggle('show')">▼ 选择球队</button>
+        <div id="tmenu" onclick="event.stopPropagation()"></div>
+    </div>
+    <div id="sr"><span class="si">🔍</span><input type="text" id="si" placeholder="搜球员..." autocomplete="off"><div id="sdd"></div></div>
+    <div id="fg"><button data-g="all" class="on">全部</button><button data-g="goalkeeper">🧤</button><button data-g="defender">🛡</button><button data-g="midfielder">🎯</button><button data-g="forward">⚽</button><button data-g="coach">📋</button></div>
+    <button id="dt">🔥 只看大瓜</button>
+    <div id="lg"><span><span class="ld r"></span>矛盾</span><span><span class="ld gd"></span>搭档</span><span><span class="ld g"></span>密友</span><span><span class="ld w"></span>普通</span></div>
+</div>
+
+<div id="nc"><canvas id="sc"></canvas>
+    <div id="lo"><div class="spn"></div><div id="ls">加载中...</div></div>
+    <div id="fcs">已聚焦 - 点击空白取消</div>
+    <div id="fbt"><button id="bzo">+</button><button id="bzi">-</button><button id="bre">⟳</button></div>
+</div>
+
+<div id="bp"><div id="bpf"><div id="bpa"></div><div><div id="bpn">点击头像</div><div id="bpe">-</div><div id="bph">点击星图中的人物</div><div id="bpclub"></div><div id="bpsalary"></div></div></div><div id="bpr"><div class="tl">球员简介</div><div id="bpintro" style="color:#8b949e">点击星图中的人物头像查看详情</div><ul id="bpl"></ul></div></div>
+<div id="mbo" onclick="clsb()"></div><div id="mbs"><div id="mh"></div><div id="mbf"><div id="mba"></div><div><div id="mbn"></div><div id="mbe"></div><div id="mbh"></div></div></div><ul id="mbl"></ul><button id="mbc" onclick="clsb()">关闭</button></div>
+<div id="mo" onclick="clmo(event)"><div id="md" onclick="event.stopPropagation()"><button id="mc" onclick="clmo()">x</button><div id="mtag">八卦爆料</div><div id="mt"></div><div id="mp"></div><div id="mcx"></div><div id="msrc"></div></div></div>
+
+<script>
+// 星空
+(function(){var c=document.getElementById("sc"),x=c.getContext("2d"),s=[],N=70;function rz(){c.width=c.parentElement.clientWidth;c.height=c.parentElement.clientHeight;}rz();window.addEventListener("resize",function(){rz();s=[];for(var i=0;i<N;i++)s.push(mk());});function mk(){return{x:Math.random()*c.width,y:Math.random()*c.height,r:Math.random()*1.2+0.3,a:Math.random(),da:(Math.random()-0.5)*0.004,ma:Math.random()*0.3+0.12};}for(var i=0;i<N;i++)s.push(mk());(function an(){x.clearRect(0,0,c.width,c.height);s.forEach(function(o){o.a+=o.da;if(o.a>o.ma||o.a<0.02)o.da*=-1;x.beginPath();x.arc(o.x,o.y,o.r,0,Math.PI*2);x.fillStyle="rgba(255,255,255,"+o.a+")";x.fill();});requestAnimationFrame(an);})();})();
+
+var net=null,nds=null,eds=null,aN=[],aE=[],cg="all",dramaOn=false,focId=null,isMb=window.innerWidth<=768,currentTid="",allTeams=[];
+
+// 初始化
+setTimeout(function(){
+    fetch("teams.json").then(function(r){return r.json();}).then(function(td){
+        allTeams=td.teams;
+        buildMenu();
+        // 从 URL 读取球队参数，没有则用默认
+        var params=new URLSearchParams(window.location.search);
+        var tid=params.get("team")||td.default;
+        loadTeamNow(tid);
+    });
+},50);
+
+function loadTeamNow(tid){
+    currentTid=tid;
+    var t=allTeams.find(function(x){return x.id===tid});if(!t)return;
+    document.getElementById("ttl").textContent=t.name+"队 · 关系星图";
+    document.title=t.name+"队 · 关系星图";
+    document.getElementById("tbtn").textContent=t.flag+" "+t.name+"队 ▼";
+    document.querySelectorAll("#tmenu button").forEach(function(b){b.classList.toggle("on",b.dataset.tid===tid);});
+    var lo=document.getElementById("lo"),ls=document.getElementById("ls");
+    lo.classList.remove("done");ls.textContent="加载"+t.name+"队...";
+    if(net){try{net.destroy();}catch(e){}net=null;nds=null;eds=null;}
+    fetch(t.dataFile).then(function(r){return r.json();}).then(function(d){
+        aN=d.nodes;aE=d.edges;
+        ls.textContent="渲染 "+aN.length+" 人...";
+        try{mknet(aN,aE);lo.classList.add("done");ls.textContent="";}
+        catch(e){ls.innerHTML="<span style=color:#ff4d4f>渲染错误: "+e.message+"</span>";console.error(e);}
+        aN.filter(function(n){return n.wiki&&!n.image;}).forEach(function(n){
+            fetch("https://en.wikipedia.org/api/rest_v1/page/summary/"+encodeURIComponent(n.wiki))
+            .then(function(r){return r.json();}).then(function(pd){if(pd.thumbnail){n.image=pd.thumbnail.source;if(nds)nds.update({id:n.id,image:n.image});}}).catch(function(){});
+        });
+    }).catch(function(e){ls.innerHTML="<span style=color:#ff4d4f>"+t.name+"队加载失败: "+e.message+"</span>";});
+}
+
+function buildMenu(){
+    var menu=document.getElementById("tmenu");
+    menu.innerHTML=allTeams.map(function(t){
+        return '<button data-tid="'+t.id+'" onclick="switchTeam(\''+t.id+'\');document.getElementById(\'tmenu\').classList.remove(\'show\')">'+t.flag+' '+t.name+'队</button>';
+    }).join("");
+}
+
+function switchTeam(tid){
+    // 直接刷新页面，URL 参数记录球队选择（最可靠方案）
+    var url=new URL(window.location);
+    url.searchParams.set("team",tid);
+    window.location.href=url.toString();
+}
+
+function mknet(rn,re){
+    var fb="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22%2321262d%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2260%22%20text-anchor%3D%22middle%22%20font-size%3D%2235%22%20fill%3D%22%238b949e%22%3E%3F%3C%2Ftext%3E%3C%2Fsvg%3E";
+    nds=new vis.DataSet(rn.map(function(n){
+        var hasImg=n.image&&n.image.startsWith("http");
+        return{id:n.id,label:n.label,
+            image:hasImg?n.image:"",
+            shape:"circularImage",size:n.value||18,
+            title:n.title,brokenImage:fb,
+            borderWidth:n.isMain?4:(n.group==="coach"?3:2),
+            color:{border:n.isMain?"#e3b341":(n.group==="coach"?"#f1e05a":"#58a6ff"),background:"#0d1117"},
+            font:{color:"#c9d1d9",size:n.isMain?13:11,background:"rgba(13,17,23,0.7)",strokeWidth:0,multi:true},group:n.group};
+    }));
+    eds=new vis.DataSet(re.map(function(e){return{from:e.from,to:e.to,label:e.label,color:e.color,width:e.width||2,arrows:{to:{enabled:true,scaleFactor:0.7}},font:{color:"#e6edf3",size:9,background:"#161b22",strokeWidth:0,align:"middle"},smooth:{type:"continuous",roundness:0.3},rt:e.relationType,sum:e.summary||"",det:e.details||"",lt:e.label};}));
+    net=new vis.Network(document.getElementById("nc"),{nodes:nds,edges:eds},{interaction:{hover:true,tooltipDelay:100},physics:{enabled:true,forceAtlas2Based:{gravitationalConstant:-130,centralGravity:0.012,springLength:230,springConstant:0.055,damping:0.35},solver:"forceAtlas2Based",stabilization:{iterations:200}},nodes:{imagePadding:2}});
+    net.on("stabilizationIterationsDone",function(){net.setOptions({physics:{stabilization:false}});});
+    net.on("click",function(p){
+        if(p.edges.length>0){var eid=p.edges[0];var ed=eds.get(eid);if(ed){var dt2=ed.details||ed.det||ed.summary||'';var rt2=ed.relationType||ed.rt||'';var cl2=(ed.color&&ed.color.color)||ed.color||'';if(rt2==='red'||cl2==='#ff4d4f'){opmo(ed);return;}}}
+        if(p.nodes.length>0){var pid=p.nodes[0];updp(pid);try{foco(pid);}catch(e){};}else{clfo();}
+    });
+    net.on("doubleClick",function(p){if(p.nodes.length>0)net.focus(p.nodes[0],{scale:1.8,animation:{duration:400}});});
+    document.getElementById("bzo").onclick=function(){net.moveTo({scale:net.getScale()*1.3,animation:{duration:300}});};
+    document.getElementById("bzi").onclick=function(){net.moveTo({scale:net.getScale()*0.7,animation:{duration:300}});};
+    document.getElementById("bre").onclick=function(){clfo();net.fit({animation:{duration:500}});};
+    var first=aN.find(function(n){return n.isMain;})||aN[0];
+    if(first){setTimeout(function(){updp(first.id);net.selectNodes([first.id]);net.focus(first.id,{scale:0.85,animation:true});},300);}
+}
+
+function foco(pid){focId=pid;var ce=eds.get({filter:function(e){return e.from===pid||e.to===pid;}}),ci=new Set();ci.add(pid);ce.forEach(function(e){ci.add(e.from);ci.add(e.to);});nds.forEach(function(n){nds.update({id:n.id,hidden:!ci.has(n.id)});});eds.forEach(function(e){eds.update({id:e.id,hidden:e.from!==pid&&e.to!==pid});});document.getElementById("fcs").classList.add("on");}
+function clfo(){if(!focId)return;focId=null;apf();document.getElementById("fcs").classList.remove("on");net.unselectAll();}
+
+function updp(pid){var p=nds.get(pid);if(!p)return;var pa=p.label.split("\n");if(isMb){updpm(pid,p,pa);}else{updpd(pid,p,pa);}}
+function updpm(pid,p,pa){document.getElementById("mba").style.backgroundImage="url("+p.image+")";document.getElementById("mbn").textContent=pa[0]||"";document.getElementById("mbe").textContent=pa[1]||"";var tl=(p.title||"").split("\n");document.getElementById("mbh").textContent=tl[0]?tl[0].replace(/简介：/,""):"";var ce=eds.get({filter:function(e){return e.from===pid||e.to===pid;}}),bl=document.getElementById("mbl");bl.innerHTML="";if(ce.length===0)bl.innerHTML="<li style=color:#8b949e>暂无关系</li>";else srt(ce).forEach(function(r){mkli(r,pid,bl,true);});document.getElementById("mbs").classList.add("on");document.getElementById("mbo").style.display="block";}
+function updpd(pid,p,pa){
+    var av=document.getElementById("bpa");
+    var imgUrl=p.image||"";
+    av.style.backgroundImage=imgUrl&&imgUrl.startsWith("http")?"url("+imgUrl+")":"none";
+    av.style.display="";av.textContent="";
+    if(!imgUrl||!imgUrl.startsWith("http")){
+        av.style.display="flex";av.style.alignItems="center";av.style.justifyContent="center";
+        av.style.fontSize="26px";av.style.fontWeight="bold";av.style.color="#8b949e";
+        av.textContent=pa[0].charAt(0);
+    }
+    var lines=(p.title||"").split("\n");
+    var intro=lines[0]?lines[0].replace(/简介：/,""):"";
+    var salary=lines[1]?lines[1].replace(/薪资：/,""):"";
+    var club=lines[2]?lines[2].replace(/现役：/,""):"";
+    document.getElementById("bpn").textContent=pa[0]||"";
+    document.getElementById("bpe").textContent=pa[1]||"";
+    document.getElementById("bph").textContent=intro||"";
+    document.getElementById("bpclub").textContent="俱乐部: "+club;
+    document.getElementById("bpsalary").textContent="薪资: "+salary;
+    // 右侧：球员详细简介
+    var bioText="<b>"+pa[0]+"</b>，"+intro+"。<br><br>目前效力于<b>"+club+"</b>，"+salary+"。";
+    document.getElementById("bpintro").innerHTML=bioText;
+    // 底部一行关系概览
+    var ce2=eds.get({filter:function(e){return e.from===pid||e.to===pid;}}),bl2=document.getElementById("bpl");bl2.innerHTML="";
+    if(ce2.length===0)return;
+    bl2.innerHTML="<span style=color:var(--mt);font-size:10px>关系: </span>";
+    srt(ce2).slice(0,8).forEach(function(r){
+        var tid=r.from===pid?r.to:r.from,tp=nds.get(tid);if(!tp)return;
+        var span=document.createElement("span");
+        span.innerHTML='<span class="d '+r.rt+'"></span>'+tp.label.split("\n")[0];
+        span.style.cssText="display:inline-flex;align-items:center;gap:2px;cursor:pointer;margin-right:2px;";
+        span.title=(r.sum||r.lt);
+        span.onclick=function(){foco(tid);updp(tid);net.focus(tid,{scale:1.4,animation:true});};
+        bl2.appendChild(span);
+    });
+    if(ce2.length>8){bl2.appendChild(document.createTextNode(" +"+(ce2.length-8)+"人"));}
+}
+function mkli(r,pid,bl,mb){var tid=r.from===pid?r.to:r.from,tp=nds.get(tid);if(!tp)return;var tn=tp.label.split("\n")[0],li=document.createElement("li");li.innerHTML='<span class="d '+r.rt+'"></span><b>'+tn+"</b>: "+(r.sum||r.lt);li.style.fontSize=mb?"13px":"11px";li.onclick=function(){if(r.det&&r.rt==="red")opmo(r);else{foco(tid);updp(tid);net.focus(tid,{scale:1.4,animation:true});}};bl.appendChild(li);}
+function srt(arr){var reds=[],golds=[],greens=[],whites=[];arr.forEach(function(e){if(e.rt==="red")reds.push(e);else if(e.rt==="gold")golds.push(e);else if(e.rt==="green")greens.push(e);else whites.push(e);});return reds.concat(golds,greens,whites);}
+function clsb(){document.getElementById("mbs").classList.remove("on");document.getElementById("mbo").style.display="none";}
+function opmo(ed){var fp=nds.get(ed.from),tp=nds.get(ed.to),fn=fp?fp.label.replace(/\n/g," "):"?",tn=tp?tp.label.replace(/\n/g," "):"?";document.getElementById("mt").textContent=ed.lt||ed.label;document.getElementById("mp").innerHTML='<b style="color:#ffa19c">'+fn+'</b> <span style="color:#ff4d4f">⚔️</span> <b style="color:#ffa19c">'+tn+"</b>";var dt=ed.det||"",parts=dt.split("<br><br><b>"),si=-1;for(var i=0;i<parts.length;i++){if(parts[i].indexOf("实锤来源")>=0){si=i;break;}}if(si>=0){document.getElementById("mcx").innerHTML=parts.slice(0,si).join("<br><br><b>");document.getElementById("msrc").style.display="block";document.getElementById("msrc").innerHTML="<b>"+parts[si];}else{document.getElementById("mcx").innerHTML=dt;document.getElementById("msrc").style.display="none";}document.getElementById("mo").classList.add("on");document.body.style.overflow="hidden";}
+function clmo(ev){if(ev&&ev.target!==document.getElementById("mo"))return;document.getElementById("mo").classList.remove("on");document.body.style.overflow="";}
+
+// 搜索
+(function(){var inp=document.getElementById("si"),dd=document.getElementById("sdd");if(!inp||!dd)return;
+inp.addEventListener("input",function(){var q=this.value.trim().toLowerCase();if(q.length<1){dd.classList.remove("show");return;}
+if(!aN||aN.length===0){dd.innerHTML='<div style=padding:6px;color:#8b949e>数据加载中...</div>';dd.classList.add("show");return;}
+var ms=aN.filter(function(n){return n.label.toLowerCase().indexOf(q)>=0;}).slice(0,8);
+if(ms.length===0){dd.innerHTML='<div style=padding:6px;color:#8b949e>未找到</div>';dd.classList.add("show");return;}
+var gc={goalkeeper:"#58a6ff",defender:"#56d364",midfielder:"#f1e05a",forward:"#ff4d4f",coach:"#e3b341"};
+dd.innerHTML=ms.map(function(n){return'<div data-id="'+n.id+'"><span class="sdot" style="background:'+(gc[n.group]||"#8b949e")+'"></span>'+n.label.split("\n")[0]+'</div>';}).join("");
+dd.classList.add("show");});
+dd.addEventListener("click",function(e){var it=e.target.closest("div[data-id]");if(!it)return;var id=parseInt(it.dataset.id);if(net){foco(id);updp(id);net.focus(id,{scale:1.5,animation:{duration:400}});}dd.classList.remove("show");inp.value="";});
+document.addEventListener("click",function(e){if(!e.target.closest("#sr"))dd.classList.remove("show");if(!e.target.closest("#tmenu")&&!e.target.closest("#tbtn"))document.getElementById("tmenu").classList.remove("show");});})();
+
+// 分组
+(function(){var bs=document.querySelectorAll("#fg button");bs.forEach(function(b){b.addEventListener("click",function(){bs.forEach(function(x){x.classList.remove("on");});b.classList.add("on");cg=b.dataset.g;apf();});});})();
+// 大瓜
+(function(){var t=document.getElementById("dt");t.addEventListener("click",function(){dramaOn=!dramaOn;t.classList.toggle("on",dramaOn);t.textContent=dramaOn?"吃瓜中":"只看大瓜";apf();});})();
+
+function apf(){
+    if(dramaOn){var re=aE.filter(function(e){return e.relationType==="red";}),ri=new Set();re.forEach(function(e){ri.add(e.from);ri.add(e.to);});nds.forEach(function(n){nds.update({id:n.id,hidden:!ri.has(n.id)});});eds.forEach(function(e){eds.update({id:e.id,hidden:e.relationType!=="red"});});setTimeout(function(){if(net)net.fit({animation:{duration:400}});},100);return;}
+    if(cg==="all"){nds.forEach(function(n){nds.update({id:n.id,hidden:false});});eds.forEach(function(e){eds.update({id:e.id,hidden:false});});}else{var vi=new Set();aN.filter(function(n){return n.group===cg;}).forEach(function(n){vi.add(n.id);});nds.forEach(function(n){nds.update({id:n.id,hidden:!vi.has(n.id)});});eds.forEach(function(e){eds.update({id:e.id,hidden:!(vi.has(e.from)||vi.has(e.to))});});}
+    setTimeout(function(){if(net)net.fit({animation:{duration:400}});},100);
+}
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){clmo();clfo();clsb();}});
+window.addEventListener("resize",function(){isMb=window.innerWidth<=768;});
+</script>
+</body>
+</html>

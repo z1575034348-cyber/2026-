@@ -1,0 +1,451 @@
+{
+  "teamName": "意大利国家队",
+  "teamNameEn": "意大利 National Football Team",
+  "totalNodes": 24,
+  "totalEdges": 22,
+  "nodes": [
+    {
+      "id": 1,
+      "label": "多纳鲁马\n(Donnarumma)",
+      "image": "",
+      "wiki": "Gianluigi_Donnarumma",
+      "title": "简介：巴黎门神意大利队长\n薪资：£250K\n现役：巴黎",
+      "group": "goalkeeper",
+      "value": 26,
+      "isMain": true
+    },
+    {
+      "id": 2,
+      "label": "维卡里奥\n(Vicario)",
+      "image": "",
+      "wiki": "Guglielmo_Vicario",
+      "title": "简介：热刺门神英超金手套\n薪资：£100K\n现役：热刺",
+      "group": "goalkeeper",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 3,
+      "label": "梅雷特\n(Meret)",
+      "image": "",
+      "wiki": "Alex_Meret",
+      "title": "简介：那不勒斯门将\n薪资：€2M\n现役：那不勒斯",
+      "group": "goalkeeper",
+      "value": 15,
+      "isMain": false
+    },
+    {
+      "id": 4,
+      "label": "巴斯托尼\n(Bastoni)",
+      "image": "",
+      "wiki": "Alessandro_Bastoni",
+      "title": "简介：国米后防核心左脚将\n薪资：€4.5M\n现役：国际米兰",
+      "group": "defender",
+      "value": 24,
+      "isMain": true
+    },
+    {
+      "id": 5,
+      "label": "卡拉菲奥里\n(Calafiori)",
+      "image": "",
+      "wiki": "Riccardo_Calafiori",
+      "title": "简介：阿森纳新星后防全能\n薪资：£100K\n现役：阿森纳",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 6,
+      "label": "迪洛伦佐\n(Di Lorenzo)",
+      "image": "",
+      "wiki": "Giovanni_Di_Lorenzo",
+      "title": "简介：那不勒斯队长右后卫\n薪资：€3M\n现役：那不勒斯",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 7,
+      "label": "迪马尔科\n(Dimarco)",
+      "image": "",
+      "wiki": "Federico_Dimarco",
+      "title": "简介：国米左路魔术师\n薪资：€3M\n现役：国米",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 8,
+      "label": "坎比亚索\n(Cambiaso)",
+      "image": "",
+      "wiki": "Andrea_Cambiaso",
+      "title": "简介：尤文边路全能\n薪资：€2.5M\n现役：尤文图斯",
+      "group": "defender",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 9,
+      "label": "布翁乔尔诺\n(Buongiorno)",
+      "image": "",
+      "wiki": "Alessandro_Buongiorno",
+      "title": "简介：那不勒斯后防领袖\n薪资：€2M\n现役：那不勒斯",
+      "group": "defender",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 10,
+      "label": "加蒂\n(Gatti)",
+      "image": "",
+      "wiki": "Federico_Gatti",
+      "title": "简介：尤文后防硬汉\n薪资：€2M\n现役：尤文图斯",
+      "group": "defender",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 11,
+      "label": "巴雷拉\n(Barella)",
+      "image": "",
+      "wiki": "Nicolo_Barella",
+      "title": "简介：国米中场引擎\n薪资：€5M\n现役：国米",
+      "group": "midfielder",
+      "value": 26,
+      "isMain": true
+    },
+    {
+      "id": 12,
+      "label": "托纳利\n(Tonali)",
+      "image": "",
+      "wiki": "Sandro_Tonali",
+      "title": "简介：纽卡亿元先生禁赛归来\n薪资：£180K\n现役：纽卡斯尔",
+      "group": "midfielder",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 13,
+      "label": "弗拉泰西\n(Frattesi)",
+      "image": "",
+      "wiki": "Davide_Frattesi",
+      "title": "简介：国米中场新星\n薪资：€3M\n现役：国米",
+      "group": "midfielder",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 14,
+      "label": "佩莱格里尼\n(Pellegrini)",
+      "image": "",
+      "wiki": "Lorenzo_Pellegrini",
+      "title": "简介：罗马队长\n薪资：€4M\n现役：罗马",
+      "group": "midfielder",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 15,
+      "label": "若日尼奥\n(Jorginho)",
+      "image": "",
+      "wiki": "Jorginho_(footballer,_born_December_1991)",
+      "title": "简介：阿森纳老将经验丰富\n薪资：£150K\n现役：阿森纳",
+      "group": "midfielder",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 16,
+      "label": "基耶萨\n(Chiesa)",
+      "image": "",
+      "wiki": "Federico_Chiesa",
+      "title": "简介：利物浦失意欧洲杯英雄\n薪资：£150K\n现役：利物浦",
+      "group": "forward",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 17,
+      "label": "雷特吉\n(Retegui)",
+      "image": "",
+      "wiki": "Mateo_Retegui",
+      "title": "简介：归化中锋9号新选择\n薪资：€2.5M\n现役：亚特兰大",
+      "group": "forward",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 18,
+      "label": "拉斯帕多里\n(Raspadori)",
+      "image": "",
+      "wiki": "Giacomo_Raspadori",
+      "title": "简介：那不勒斯锋线尖刀\n薪资：€2.5M\n现役：那不勒斯",
+      "group": "forward",
+      "value": 19,
+      "isMain": false
+    },
+    {
+      "id": 19,
+      "label": "扎卡尼\n(Zaccagni)",
+      "image": "",
+      "wiki": "Mattia_Zaccagni",
+      "title": "简介：拉齐奥队长边锋\n薪资：€2.5M\n现役：拉齐奥",
+      "group": "forward",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 20,
+      "label": "斯卡马卡\n(Scamacca)",
+      "image": "",
+      "wiki": "Gianluca_Scamacca",
+      "title": "简介：亚特兰大中锋\n薪资：€3M\n现役：亚特兰大",
+      "group": "forward",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 21,
+      "label": "基恩\n(Kean)",
+      "image": "",
+      "wiki": "Moise_Kean",
+      "title": "简介：佛罗伦萨重生\n薪资：€2.5M\n现役：佛罗伦萨",
+      "group": "forward",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 22,
+      "label": "乌多吉\n(Udogie)",
+      "image": "",
+      "wiki": "Destiny_Udogie",
+      "title": "简介：热刺左路天才\n薪资：£80K\n现役：热刺",
+      "group": "defender",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 23,
+      "label": "洛卡特利\n(Locatelli)",
+      "image": "",
+      "wiki": "Manuel_Locatelli",
+      "title": "简介：尤文中场\n薪资：€3.5M\n现役：尤文图斯",
+      "group": "midfielder",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 24,
+      "label": "斯帕莱蒂\n(Spalletti)",
+      "image": "",
+      "wiki": "Luciano_Spalletti",
+      "title": "简介：意甲冠军教头\n薪资：€3M\n现役：意大利国家队",
+      "group": "coach",
+      "value": 22,
+      "isMain": true
+    }
+  ],
+  "edges": [
+    {
+      "from": 16,
+      "to": 24,
+      "label": "弃用风波",
+      "color": "#ff4d4f",
+      "width": 3.5,
+      "relationType": "red",
+      "summary": "基耶萨被斯帕莱蒂边缘化",
+      "details": "<b>【欧洲杯英雄的坠落】</b><br><br>基耶萨状态低迷后失去主力。<br><br><b>📰 《米兰体育报》</b>"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "label": "双核共存",
+      "color": "#ff4d4f",
+      "width": 2.5,
+      "relationType": "red",
+      "summary": "巴雷拉与托纳利中场共存问题",
+      "details": "<b>【巴雷拉+托纳利：1+1<2的困局】</b><br><br>两人都需要球权才能发挥，导致中场指挥官过多。托纳利禁赛期间巴雷拉独挑大梁表现更出色，引发双核是否真的兼容的激烈讨论。<br><br><b>📰 实锤来源：《米兰体育报》。</b>"
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "label": "国米双星",
+      "color": "#56d364",
+      "width": 3,
+      "relationType": "green",
+      "summary": "巴雷拉+弗拉泰西双重搭档"
+    },
+    {
+      "from": 4,
+      "to": 7,
+      "label": "国米防线",
+      "color": "#56d364",
+      "width": 2.5,
+      "relationType": "green",
+      "summary": "巴斯托尼+迪马尔科左路黄金通道"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "label": "锋线搭档",
+      "color": "#56d364",
+      "width": 2,
+      "relationType": "green",
+      "summary": "雷特吉+拉斯帕多里新生代锋线"
+    },
+    {
+      "from": 24,
+      "to": 11,
+      "label": "战术核心",
+      "color": "#e3b341",
+      "width": 2.5,
+      "relationType": "gold",
+      "summary": "斯帕莱蒂以巴雷拉为引擎"
+    },
+    {
+      "from": 5,
+      "to": 4,
+      "label": "中卫",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "卡拉菲奥里+巴斯托尼"
+    },
+    {
+      "from": 19,
+      "to": 16,
+      "label": "边锋",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "扎卡尼+基耶萨"
+    },
+    {
+      "from": 1,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "多纳鲁马是国家队成员"
+    },
+    {
+      "from": 2,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "维卡里奥是国家队成员"
+    },
+    {
+      "from": 3,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "梅雷特是国家队成员"
+    },
+    {
+      "from": 6,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "迪洛伦佐是国家队成员"
+    },
+    {
+      "from": 8,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "坎比亚索是国家队成员"
+    },
+    {
+      "from": 9,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "布翁乔尔诺是国家队成员"
+    },
+    {
+      "from": 10,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "加蒂是国家队成员"
+    },
+    {
+      "from": 14,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "佩莱格里尼是国家队成员"
+    },
+    {
+      "from": 15,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "若日尼奥是国家队成员"
+    },
+    {
+      "from": 20,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "斯卡马卡是国家队成员"
+    },
+    {
+      "from": 21,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "基恩是国家队成员"
+    },
+    {
+      "from": 22,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "乌多吉是国家队成员"
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "洛卡特利是国家队成员"
+    },
+    {
+      "from": 24,
+      "to": 23,
+      "label": "尤文帮争议",
+      "color": "#ff4d4f",
+      "width": 2.5,
+      "relationType": "red",
+      "summary": "斯帕莱蒂被质疑偏袒尤文图斯球员",
+      "details": "<b>【尤文帮的特权争议】</b><br><br>斯帕莱蒂大量征召尤文球员引发国米和米兰系不满。意大利媒体统计尤文球员出场时间远超其他俱乐部。<br><br><b>📰 实锤来源：《米兰体育报》数据统计。</b>"
+    }
+  ]
+}

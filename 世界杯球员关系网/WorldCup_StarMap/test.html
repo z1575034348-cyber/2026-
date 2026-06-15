@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>诊断测试</title>
+<script src="vis-network.min.js"></script>
+<style>
+body { background: #0d1117; color: #fff; font-family: sans-serif; padding: 20px; }
+.pass { color: #56d364; } .fail { color: #ff4d4f; }
+</style>
+</head>
+<body>
+<h1>比利时星图 - 诊断测试</h1>
+<div id="results"></div>
+<script>
+var out = document.getElementById('results');
+function log(msg, ok) {
+    var cls = ok ? 'pass' : 'fail';
+    out.innerHTML += '<p class="' + cls + '">' + (ok ? '✅ ' : '❌ ') + msg + '</p>';
+}
+
+// 1. Vis.js 是否加载
+log('Vis.js 全局对象: ' + (typeof vis !== 'undefined' ? '已加载' : '未加载'), typeof vis !== 'undefined');
+log('vis.DataSet: ' + (typeof vis.DataSet), typeof vis.DataSet === 'function');
+log('vis.Network: ' + (typeof vis.Network), typeof vis.Network === 'function');
+
+// 2. 数据文件
+fetch('team_data.json')
+    .then(r => r.json())
+    .then(d => {
+        log('team_data.json 加载成功: ' + d.totalNodes + ' 节点, ' + d.totalEdges + ' 连线', true);
+        // 3. 尝试创建 Vis.js 网络
+        try {
+            var container = document.createElement('div');
+            container.style.width = '800px';
+            container.style.height = '500px';
+            container.style.border = '1px solid #30363d';
+            container.style.marginTop = '20px';
+            document.body.appendChild(container);
+
+            var nodes = new vis.DataSet(d.nodes.slice(0,5).map(n => ({
+                id: n.id, label: n.label.split('\n')[0],
+                image: n.image, shape: 'circularImage', size: 25,
+                font: { color: '#fff', size: 12 }
+            })));
+            var edges = new vis.DataSet(d.edges.filter(e => e.from <= 5 && e.to <= 5).map(e => ({
+                from: e.from, to: e.to, color: { color: e.color }
+            })));
+            var net = new vis.Network(container, { nodes, edges }, {
+                physics: { enabled: true, solver: 'forceAtlas2Based' }
+            });
+            log('Vis.js 力导向图渲染成功!', true);
+            net.once('stabilized', function() {
+                log('力导向图已稳定', true);
+            });
+        } catch(e) {
+            log('Vis.js 渲染失败: ' + e.message, false);
+        }
+    })
+    .catch(e => {
+        log('数据加载失败: ' + e.message, false);
+    });
+</script>
+</body>
+</html>

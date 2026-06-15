@@ -1,0 +1,318 @@
+{
+  "teamName": "塞尔维亚国家队",
+  "teamNameEn": "塞尔维亚 National Football Team",
+  "totalNodes": 17,
+  "totalEdges": 15,
+  "nodes": [
+    {
+      "id": 1,
+      "label": "拉伊科维奇\n(Rajkovic)",
+      "image": "",
+      "wiki": "Predrag_Rajkovic",
+      "title": "简介：吉达联合门神\n薪资：€3M\n现役：吉达联合",
+      "group": "goalkeeper",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 2,
+      "label": "瓦尼亚\n(Vanja)",
+      "image": "",
+      "wiki": "Vanja_Milinkovic-Savic",
+      "title": "简介：都灵巨入门将\n薪资：€1.5M\n现役：都灵",
+      "group": "goalkeeper",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 3,
+      "label": "米伦科维奇\n(Milenkovic)",
+      "image": "",
+      "wiki": "Nikola_Milenkovic",
+      "title": "简介：诺丁汉森林铁卫\n薪资：£85K\n现役：诺丁汉森林",
+      "group": "defender",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 4,
+      "label": "帕夫洛维奇\n(S.Pavlovic)",
+      "image": "",
+      "wiki": "Strahinja_Pavlovic",
+      "title": "简介：米兰后防野兽\n薪资：€3M\n现役：AC米兰",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 5,
+      "label": "韦利科维奇\n(Veljkovic)",
+      "image": "",
+      "wiki": "Milos_Veljkovic",
+      "title": "简介：不莱梅中卫\n薪资：€1.5M\n现役：不莱梅",
+      "group": "defender",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 6,
+      "label": "日夫科维奇\n(Zivkovic)",
+      "image": "",
+      "wiki": "Andrija_Zivkovic",
+      "title": "简介：PAOK右路核心\n薪资：€2M\n现役：PAOK",
+      "group": "midfielder",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 7,
+      "label": "米林科维奇\n(SMS)",
+      "image": "",
+      "wiki": "Sergej_Milinkovic-Savic",
+      "title": "简介：塞尔维亚天王\n薪资：€25M\n现役：利雅得新月",
+      "group": "midfielder",
+      "value": 26,
+      "isMain": true
+    },
+    {
+      "id": 8,
+      "label": "塔迪奇\n(Tadic)",
+      "image": "",
+      "wiki": "Dusan_Tadic",
+      "title": "简介：塞尔维亚传奇\n薪资：€4M\n现役：费内巴切",
+      "group": "forward",
+      "value": 24,
+      "isMain": false
+    },
+    {
+      "id": 9,
+      "label": "弗拉霍维奇\n(Vlahovic)",
+      "image": "",
+      "wiki": "Dusan_Vlahovic",
+      "title": "简介：尤文亿元中锋\n薪资：€7M\n现役：尤文",
+      "group": "forward",
+      "value": 26,
+      "isMain": true
+    },
+    {
+      "id": 10,
+      "label": "米特罗维奇\n(Mitrovic)",
+      "image": "",
+      "wiki": "Aleksandar_Mitrovic",
+      "title": "简介：塞尔维亚射手王\n薪资：€25M\n现役：利雅得新月",
+      "group": "forward",
+      "value": 24,
+      "isMain": false
+    },
+    {
+      "id": 11,
+      "label": "约维奇\n(Jovic)",
+      "image": "",
+      "wiki": "Luka_Jovic",
+      "title": "简介：米兰失意天才\n薪资：€3M\n现役：AC米兰",
+      "group": "forward",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 12,
+      "label": "科斯蒂奇\n(Kostic)",
+      "image": "",
+      "wiki": "Filip_Kostic",
+      "title": "简介：尤文左路天尊\n薪资：€4M\n现役：尤文",
+      "group": "midfielder",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 13,
+      "label": "卢基奇\n(Lukic)",
+      "image": "",
+      "wiki": "Sasa_Lukic",
+      "title": "简介：富勒姆中场\n薪资：£70K\n现役：富勒姆",
+      "group": "midfielder",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 14,
+      "label": "萨马尔季奇\n(Samardzic)",
+      "image": "",
+      "wiki": "Lazar_Samardzic",
+      "title": "简介：亚特兰大新星\n薪资：€2M\n现役：亚特兰大",
+      "group": "midfielder",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 15,
+      "label": "拉多尼奇\n(Radonjic)",
+      "image": "",
+      "wiki": "Nemanja_Radonjic",
+      "title": "简介：马洛卡边锋\n薪资：€1.5M\n现役：马洛卡",
+      "group": "forward",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 16,
+      "label": "格鲁伊奇\n(Grujic)",
+      "image": "",
+      "wiki": "Marko_Grujic",
+      "title": "简介：波尔图后腰\n薪资：€2M\n现役：波尔图",
+      "group": "midfielder",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 17,
+      "label": "斯托伊科维奇\n(Stojkovic)",
+      "image": "",
+      "wiki": "Dragan_Stojkovic",
+      "title": "简介：广州城前主帅\n薪资：€2M\n现役：塞尔维亚国家队",
+      "group": "coach",
+      "value": 20,
+      "isMain": true
+    }
+  ],
+  "edges": [
+    {
+      "from": 9,
+      "to": 10,
+      "label": "太太团互绿",
+      "color": "#ff4d4f",
+      "width": 4.5,
+      "relationType": "red",
+      "summary": "弗拉霍维奇与米特罗维奇太太团罗生门",
+      "details": "<b>【太太团乱战】</b><br><br>2022世界杯爆出某主力球员妻子与队友有染。<br><br><b>📰 《闪电报》；《每日邮报》</b>"
+    },
+    {
+      "from": 7,
+      "to": 10,
+      "label": "新月连线",
+      "color": "#56d364",
+      "width": 2.5,
+      "relationType": "green",
+      "summary": "米林科维奇+米特罗维奇"
+    },
+    {
+      "from": 9,
+      "to": 12,
+      "label": "尤文连线",
+      "color": "#56d364",
+      "width": 2,
+      "relationType": "green",
+      "summary": "弗拉霍维奇+科斯蒂奇"
+    },
+    {
+      "from": 17,
+      "to": 8,
+      "label": "队长信任",
+      "color": "#e3b341",
+      "width": 2.5,
+      "relationType": "gold",
+      "summary": "斯托伊科维奇以塔迪奇为领袖"
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "label": "中卫",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "米伦科维奇+帕夫洛维奇"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "中场",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "卢基奇+萨马尔季奇"
+    },
+    {
+      "from": 1,
+      "to": 17,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "拉伊科维奇是国家队成员"
+    },
+    {
+      "from": 2,
+      "to": 17,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "瓦尼亚是国家队成员"
+    },
+    {
+      "from": 5,
+      "to": 17,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "韦利科维奇是国家队成员"
+    },
+    {
+      "from": 6,
+      "to": 17,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "日夫科维奇是国家队成员"
+    },
+    {
+      "from": 11,
+      "to": 17,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "约维奇是国家队成员"
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "拉多尼奇是国家队成员"
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "格鲁伊奇是国家队成员"
+    },
+    {
+      "from": 12,
+      "to": 14,
+      "label": "9号诅咒",
+      "color": "#ff4d4f",
+      "width": 2.5,
+      "relationType": "red",
+      "summary": "米特罗维奇和约维奇的世代之争",
+      "details": "<b>【塞尔维亚9号诅咒：米神vs约维奇】</b><br><br>米特罗维奇国家队进球如麻但远走沙特。约维奇在米兰找回状态认为更配首发。<br><br><b>📰 实锤来源：《闪电报》。</b>"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "核心交替",
+      "color": "#ff4d4f",
+      "width": 2,
+      "relationType": "red",
+      "summary": "米林科维奇与塔迪奇的新老核心交接摩擦",
+      "details": "<b>【王权交接：塔迪奇之后谁说了算？】</b><br><br>塔迪奇传奇地位无可撼动，但米林科维奇拿着世界级薪水认为自己应是战术核心。<br><br><b>📰 实锤来源：《体育日报》。</b>"
+    }
+  ]
+}

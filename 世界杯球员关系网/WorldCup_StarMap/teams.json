@@ -1,0 +1,133 @@
+{
+  "teams": [
+    {
+      "id": "belgium",
+      "name": "比利时",
+      "nameEn": "Belgium",
+      "flag": "🇧🇪",
+      "dataFile": "data/belgium_data.json",
+      "description": "黄金一代的意难平"
+    },
+    {
+      "id": "france",
+      "name": "法国",
+      "nameEn": "France",
+      "flag": "🇫🇷",
+      "dataFile": "data/france_data.json",
+      "description": "内讧祖师爷，从罢训到巫师诅咒"
+    },
+    {
+      "id": "england",
+      "name": "英格兰",
+      "nameEn": "England",
+      "flag": "🏴",
+      "dataFile": "data/england_data.json",
+      "description": "小报与太太团的狂欢"
+    },
+    {
+      "id": "portugal",
+      "name": "葡萄牙",
+      "nameEn": "Portugal",
+      "flag": "🇵🇹",
+      "dataFile": "data/portugal_data.json",
+      "description": "C罗最后一舞与新星暗流"
+    },
+    {
+      "id": "argentina",
+      "name": "阿根廷",
+      "nameEn": "Argentina",
+      "flag": "🇦🇷",
+      "dataFile": "data/argentina_data.json",
+      "description": "极端情绪，后梅西时代暗战"
+    },
+    {
+      "id": "brazil",
+      "name": "巴西",
+      "nameEn": "Brazil",
+      "flag": "🇧🇷",
+      "dataFile": "data/brazil_data.json",
+      "description": "派对文化与豪门帮派林立"
+    },
+    {
+      "id": "spain",
+      "name": "西班牙",
+      "nameEn": "Spain",
+      "flag": "🇪🇸",
+      "dataFile": "data/spain_data.json",
+      "description": "皇马巴萨的世纪延续"
+    },
+    {
+      "id": "germany",
+      "name": "德国",
+      "nameEn": "Germany",
+      "flag": "🇩🇪",
+      "dataFile": "data/germany_data.json",
+      "description": "拜仁帮的绝对统治"
+    },
+    {
+      "id": "netherlands",
+      "name": "荷兰",
+      "nameEn": "Netherlands",
+      "flag": "🇳🇱",
+      "dataFile": "data/netherlands_data.json",
+      "description": "全员恶人与内讧传统"
+    },
+    {
+      "id": "italy",
+      "name": "意大利",
+      "nameEn": "Italy",
+      "flag": "🇮🇹",
+      "dataFile": "data/italy_data.json",
+      "description": "意甲三强的利益角逐"
+    },
+    {
+      "id": "usa",
+      "name": "美国",
+      "nameEn": "USA",
+      "flag": "🇺🇸",
+      "dataFile": "data/usa_data.json",
+      "description": "东道主+家族世纪大瓜"
+    },
+    {
+      "id": "southkorea",
+      "name": "韩国",
+      "nameEn": "South Korea",
+      "flag": "🇰🇷",
+      "dataFile": "data/southkorea_data.json",
+      "description": "亚洲顶流乒乓球门"
+    },
+    {
+      "id": "mexico",
+      "name": "墨西哥",
+      "nameEn": "Mexico",
+      "flag": "🇲🇽",
+      "dataFile": "data/mexico_data.json",
+      "description": "东道主+赛前派对专业户"
+    },
+    {
+      "id": "cameroon",
+      "name": "喀麦隆",
+      "nameEn": "Cameroon",
+      "flag": "🇨🇲",
+      "dataFile": "data/cameroon_data.json",
+      "description": "埃托奥的独裁大戏"
+    },
+    {
+      "id": "serbia",
+      "name": "塞尔维亚",
+      "nameEn": "Serbia",
+      "flag": "🇷🇸",
+      "dataFile": "data/serbia_data.json",
+      "description": "太太团乱战与罗生门"
+    },
+    {
+      "id": "uruguay",
+      "name": "乌拉圭",
+      "nameEn": "Uruguay",
+      "flag": "🇺🇾",
+      "dataFile": "data/uruguay_data.json",
+      "description": "疯子教练与火爆脾气"
+    }
+  ],
+  "default": "belgium"
+}
