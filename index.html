@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>球队关系星图</title>
-<script src="vis-network.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 <style>
 :root{--bg:#0d1117;--b2:#161b22;--bd:#30363d;--tx:#e6edf3;--mt:#8b949e;--rd:#ff4d4f;--gn:#56d364;--gd:#e3b341;--bl:#58a6ff}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -157,7 +157,11 @@ function loadTeamNow(tid){
     var lo=document.getElementById("lo"),ls=document.getElementById("ls");
     lo.classList.remove("done");ls.textContent="加载"+t.name+"队...";
     if(net){try{net.destroy();}catch(e){}net=null;nds=null;eds=null;}
-    fetch(t.dataFile).then(function(r){return r.json();}).then(function(d){
+    
+    // ✨ 核心修复区：无论 JSON 里怎么写，都在最外层找文件 ✨
+    var safeDataUrl = t.dataFile.replace(/^data\//, ""); 
+
+    fetch(safeDataUrl).then(function(r){return r.json();}).then(function(d){
         aN=d.nodes;aE=d.edges;
         ls.textContent="渲染 "+aN.length+" 人...";
         try{mknet(aN,aE);lo.classList.add("done");ls.textContent="";}
