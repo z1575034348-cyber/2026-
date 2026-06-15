@@ -1,0 +1,499 @@
+{
+  "teamName": "德国国家队",
+  "teamNameEn": "德国 National Football Team",
+  "totalNodes": 27,
+  "totalEdges": 24,
+  "nodes": [
+    {
+      "id": 1,
+      "label": "特尔施特根\n(ter Stegen)",
+      "image": "",
+      "wiki": "Marc-Andre_ter_Stegen",
+      "title": "简介：巴萨门神终获一门\n薪资：£220K\n现役：巴萨",
+      "group": "goalkeeper",
+      "value": 24,
+      "isMain": false
+    },
+    {
+      "id": 2,
+      "label": "努贝尔\n(Nubel)",
+      "image": "",
+      "wiki": "Alexander_Nubel",
+      "title": "简介：斯图加特新门神\n薪资：€3M\n现役：斯图加特",
+      "group": "goalkeeper",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 3,
+      "label": "鲍曼\n(Baumann)",
+      "image": "",
+      "wiki": "Oliver_Baumann",
+      "title": "简介：霍芬海姆老门将\n薪资：€2M\n现役：霍芬海姆",
+      "group": "goalkeeper",
+      "value": 14,
+      "isMain": false
+    },
+    {
+      "id": 4,
+      "label": "吕迪格\n(Rudiger)",
+      "image": "",
+      "wiki": "Antonio_Rudiger",
+      "title": "简介：皇马后防野兽\n薪资：£250K\n现役：皇马",
+      "group": "defender",
+      "value": 26,
+      "isMain": true
+    },
+    {
+      "id": 5,
+      "label": "施洛特贝克\n(Schlotterbeck)",
+      "image": "",
+      "wiki": "Nico_Schlotterbeck",
+      "title": "简介：多特后防核心\n薪资：€4M\n现役：多特蒙德",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 6,
+      "label": "塔\n(Tah)",
+      "image": "",
+      "wiki": "Jonathan_Tah",
+      "title": "简介：勒沃库森铁塔\n薪资：€4M\n现役：勒沃库森",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 7,
+      "label": "基米希\n(Kimmich)",
+      "image": "",
+      "wiki": "Joshua_Kimmich",
+      "title": "简介：拜仁全能战士\n薪资：£300K\n现役：拜仁",
+      "group": "defender",
+      "value": 26,
+      "isMain": true
+    },
+    {
+      "id": 8,
+      "label": "亨里希斯\n(Henrichs)",
+      "image": "",
+      "wiki": "Benjamin_Henrichs",
+      "title": "简介：莱比锡右后卫\n薪资：€3M\n现役：莱比锡",
+      "group": "defender",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 9,
+      "label": "米特尔施塔特\n(Mittelstadt)",
+      "image": "",
+      "wiki": "Maximilian_Mittelstadt",
+      "title": "简介：斯图加特左后卫\n薪资：€2M\n现役：斯图加特",
+      "group": "defender",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 10,
+      "label": "劳姆\n(Raum)",
+      "image": "",
+      "wiki": "David_Raum",
+      "title": "简介：莱比锡左路超跑\n薪资：€3M\n现役：莱比锡",
+      "group": "defender",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 11,
+      "label": "穆西亚拉\n(Musiala)",
+      "image": "",
+      "wiki": "Jamal_Musiala",
+      "title": "简介：拜仁天选之子\n薪资：£250K\n现役：拜仁",
+      "group": "midfielder",
+      "value": 28,
+      "isMain": true
+    },
+    {
+      "id": 12,
+      "label": "维尔茨\n(Wirtz)",
+      "image": "",
+      "wiki": "Florian_Wirtz",
+      "title": "简介：勒沃库森金童\n薪资：€5M\n现役：勒沃库森",
+      "group": "midfielder",
+      "value": 28,
+      "isMain": true
+    },
+    {
+      "id": 13,
+      "label": "京多安\n(Gundogan)",
+      "image": "",
+      "wiki": "Ilkay_Gundogan",
+      "title": "简介：德国队长曼城传奇\n薪资：£200K\n现役：曼城",
+      "group": "midfielder",
+      "value": 24,
+      "isMain": true
+    },
+    {
+      "id": 14,
+      "label": "格罗斯\n(Gross)",
+      "image": "",
+      "wiki": "Pascal_Gross",
+      "title": "简介：多特全能老妖\n薪资：€3M\n现役：多特蒙德",
+      "group": "midfielder",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 15,
+      "label": "安德里希\n(Andrich)",
+      "image": "",
+      "wiki": "Robert_Andrich",
+      "title": "简介：勒沃库森铁腰\n薪资：€2.5M\n现役：勒沃库森",
+      "group": "midfielder",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 16,
+      "label": "哈弗茨\n(Havertz)",
+      "image": "",
+      "wiki": "Kai_Havertz",
+      "title": "简介：阿森纳全能王\n薪资：£280K\n现役：阿森纳",
+      "group": "forward",
+      "value": 24,
+      "isMain": false
+    },
+    {
+      "id": 17,
+      "label": "萨内\n(Sane)",
+      "image": "",
+      "wiki": "Leroy_Sane",
+      "title": "简介：拜仁边路快马\n薪资：£300K\n现役：拜仁",
+      "group": "forward",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 18,
+      "label": "格纳布里\n(Gnabry)",
+      "image": "",
+      "wiki": "Serge_Gnabry",
+      "title": "简介：拜仁边锋\n薪资：£220K\n现役：拜仁",
+      "group": "forward",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 19,
+      "label": "菲尔克鲁格\n(Fullkrug)",
+      "image": "",
+      "wiki": "Niclas_Fullkrug",
+      "title": "简介：德国大中锋\n薪资：£130K\n现役：西汉姆联",
+      "group": "forward",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 20,
+      "label": "翁达夫\n(Undav)",
+      "image": "",
+      "wiki": "Deniz_Undav",
+      "title": "简介：斯图加特射手\n薪资：€2.5M\n现役：斯图加特",
+      "group": "forward",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 21,
+      "label": "阿德耶米\n(Adeyemi)",
+      "image": "",
+      "wiki": "Karim_Adeyemi",
+      "title": "简介：多特速度狂魔\n薪资：€3M\n现役：多特蒙德",
+      "group": "forward",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 22,
+      "label": "穆勒\n(Muller)",
+      "image": "",
+      "wiki": "Thomas_Muller",
+      "title": "简介：拜仁传奇空间阅读者\n薪资：£300K\n现役：拜仁",
+      "group": "forward",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 23,
+      "label": "戈雷茨卡\n(Goretzka)",
+      "image": "",
+      "wiki": "Leon_Goretzka",
+      "title": "简介：拜仁边缘人心有不甘\n薪资：£250K\n现役：拜仁",
+      "group": "midfielder",
+      "value": 19,
+      "isMain": false
+    },
+    {
+      "id": 24,
+      "label": "安东\n(Anton)",
+      "image": "",
+      "wiki": "Waldemar_Anton",
+      "title": "简介：多特中卫\n薪资：€3M\n现役：多特蒙德",
+      "group": "defender",
+      "value": 15,
+      "isMain": false
+    },
+    {
+      "id": 25,
+      "label": "贝尔\n(Beier)",
+      "image": "",
+      "wiki": "Maximilian_Beier",
+      "title": "简介：多特新星\n薪资：€1.5M\n现役：多特蒙德",
+      "group": "forward",
+      "value": 14,
+      "isMain": false
+    },
+    {
+      "id": 26,
+      "label": "帕夫洛维奇\n(Pavlovic)",
+      "image": "",
+      "wiki": "Aleksandar_Pavlovic_(footballer)",
+      "title": "简介：拜仁青训后腰新星\n薪资：€1M\n现役：拜仁",
+      "group": "midfielder",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 27,
+      "label": "纳格尔斯曼\n(Nagelsmann)",
+      "image": "",
+      "wiki": "Julian_Nagelsmann",
+      "title": "简介：天才少帅战术革新者\n薪资：€5M\n现役：德国国家队",
+      "group": "coach",
+      "value": 22,
+      "isMain": true
+    }
+  ],
+  "edges": [
+    {
+      "from": 7,
+      "to": 27,
+      "label": "位置争议",
+      "color": "#ff4d4f",
+      "width": 3.5,
+      "relationType": "red",
+      "summary": "基米希不愿踢右后卫长期争议",
+      "details": "<b>【我是中场不是右后卫！】</b><br><br>基米希多次公开表示不适合右后卫。<br><br><b>📰 《踢球者》</b>"
+    },
+    {
+      "from": 23,
+      "to": 27,
+      "label": "弃用愤懑",
+      "color": "#ff4d4f",
+      "width": 3,
+      "relationType": "red",
+      "summary": "戈雷茨卡被纳格尔斯曼边缘化",
+      "details": "<b>【戈雷茨卡：从拜仁主力到国家队看客】</b><br><br>戈雷茨卡被纳格尔斯曼公开表示需要更有活力的中场后直接弃用。其经纪人炮轰纳帅不尊重功勋球员。<br><br><b>📰 实锤来源：《踢球者》；《图片报》。</b>"
+    },
+    {
+      "from": 17,
+      "to": 27,
+      "label": "态度质疑",
+      "color": "#ff4d4f",
+      "width": 2.5,
+      "relationType": "red",
+      "summary": "萨内训练态度屡遭教练组质疑",
+      "details": "<b>【萨内的天赋与态度之谜】</b><br><br>萨内拥有世界级突破能力，但训练态度屡遭质疑。2024欧洲杯期间被拍到训练心不在焉，纳格尔斯曼赛后暗指有些球员需要重新审视职业态度。<br><br><b>📰 实锤来源：ARD；《南德意志报》。</b>"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "label": "双子星",
+      "color": "#56d364",
+      "width": 4,
+      "relationType": "green",
+      "summary": "穆西亚拉+维尔茨未来十年双核"
+    },
+    {
+      "from": 13,
+      "to": 11,
+      "label": "师徒传承",
+      "color": "#56d364",
+      "width": 2.5,
+      "relationType": "green",
+      "summary": "京多安老带新穆西亚拉"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "后防搭档",
+      "color": "#56d364",
+      "width": 2.5,
+      "relationType": "green",
+      "summary": "吕迪格+塔钢铁防线"
+    },
+    {
+      "from": 7,
+      "to": 22,
+      "label": "拜仁传奇",
+      "color": "#56d364",
+      "width": 2.5,
+      "relationType": "green",
+      "summary": "基米希+穆勒深厚友谊"
+    },
+    {
+      "from": 27,
+      "to": 12,
+      "label": "战术核心",
+      "color": "#e3b341",
+      "width": 2.5,
+      "relationType": "gold",
+      "summary": "纳格尔斯曼以维尔茨为战术引擎"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "中卫轮换",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "施洛特贝克+塔"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "label": "边锋轮换",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "萨内+格纳布里"
+    },
+    {
+      "from": 21,
+      "to": 25,
+      "label": "新人竞争",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "阿德耶米+贝尔"
+    },
+    {
+      "from": 1,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "特尔施特根是国家队成员"
+    },
+    {
+      "from": 2,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "努贝尔是国家队成员"
+    },
+    {
+      "from": 3,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "鲍曼是国家队成员"
+    },
+    {
+      "from": 8,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "亨里希斯是国家队成员"
+    },
+    {
+      "from": 9,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "米特尔施塔特是国家队成员"
+    },
+    {
+      "from": 10,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "劳姆是国家队成员"
+    },
+    {
+      "from": 14,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "格罗斯是国家队成员"
+    },
+    {
+      "from": 15,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "安德里希是国家队成员"
+    },
+    {
+      "from": 16,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "哈弗茨是国家队成员"
+    },
+    {
+      "from": 19,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "菲尔克鲁格是国家队成员"
+    },
+    {
+      "from": 20,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "翁达夫是国家队成员"
+    },
+    {
+      "from": 24,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "安东是国家队成员"
+    },
+    {
+      "from": 26,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "帕夫洛维奇是国家队成员"
+    }
+  ]
+}

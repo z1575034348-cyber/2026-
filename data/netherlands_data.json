@@ -1,0 +1,433 @@
+{
+  "teamName": "荷兰国家队",
+  "teamNameEn": "荷兰 National Football Team",
+  "totalNodes": 24,
+  "totalEdges": 20,
+  "nodes": [
+    {
+      "id": 1,
+      "label": "弗莱肯\n(Flekken)",
+      "image": "",
+      "wiki": "Mark_Flekken",
+      "title": "简介：布伦特福德门神\n薪资：£60K\n现役：布伦特福德",
+      "group": "goalkeeper",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 2,
+      "label": "比洛\n(Bijlow)",
+      "image": "",
+      "wiki": "Justin_Bijlow",
+      "title": "简介：费耶诺德一门\n薪资：€1.5M\n现役：费耶诺德",
+      "group": "goalkeeper",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 3,
+      "label": "奥莱\n(Olij)",
+      "image": "",
+      "wiki": "Nick_Olij",
+      "title": "简介：鹿特丹斯巴达\n薪资：€0.8M\n现役：鹿特丹斯巴达",
+      "group": "goalkeeper",
+      "value": 13,
+      "isMain": false
+    },
+    {
+      "id": 4,
+      "label": "范迪克\n(Van Dijk)",
+      "image": "",
+      "wiki": "Virgil_van_Dijk",
+      "title": "简介：荷兰队长世界级中卫\n薪资：£250K\n现役：利物浦",
+      "group": "defender",
+      "value": 28,
+      "isMain": true
+    },
+    {
+      "id": 5,
+      "label": "德弗赖\n(De Vrij)",
+      "image": "",
+      "wiki": "Stefan_de_Vrij",
+      "title": "简介：国米后防核心\n薪资：€4M\n现役：国际米兰",
+      "group": "defender",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 6,
+      "label": "阿克\n(Ake)",
+      "image": "",
+      "wiki": "Nathan_Ake",
+      "title": "简介：曼城全能后卫\n薪资：£160K\n现役：曼城",
+      "group": "defender",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 7,
+      "label": "德里赫特\n(De Ligt)",
+      "image": "",
+      "wiki": "Matthijs_de_Ligt",
+      "title": "简介：曼联后防新领袖\n薪资：£200K\n现役：曼联",
+      "group": "defender",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 8,
+      "label": "邓弗里斯\n(Dumfries)",
+      "image": "",
+      "wiki": "Denzel_Dumfries",
+      "title": "简介：国米右路超跑\n薪资：€3.5M\n现役：国米",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 9,
+      "label": "弗林蓬\n(Frimpong)",
+      "image": "",
+      "wiki": "Jeremie_Frimpong",
+      "title": "简介：勒沃库森右路妖星\n薪资：€4M\n现役：勒沃库森",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 10,
+      "label": "范德文\n(Van de Ven)",
+      "image": "",
+      "wiki": "Micky_van_de_Ven",
+      "title": "简介：热刺左脚超跑\n薪资：£120K\n现役：热刺",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 11,
+      "label": "德容\n(De Jong)",
+      "image": "",
+      "wiki": "Frenkie_de_Jong",
+      "title": "简介：巴萨中场灵魂\n薪资：£350K\n现役：巴萨",
+      "group": "midfielder",
+      "value": 26,
+      "isMain": true
+    },
+    {
+      "id": 12,
+      "label": "赖因德斯\n(Reijnders)",
+      "image": "",
+      "wiki": "Tijjani_Reijnders",
+      "title": "简介：米兰中场核心\n薪资：€3.5M\n现役：AC米兰",
+      "group": "midfielder",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 13,
+      "label": "赫拉芬贝赫\n(Gravenberch)",
+      "image": "",
+      "wiki": "Ryan_Gravenberch",
+      "title": "简介：利物浦重生\n薪资：£130K\n现役：利物浦",
+      "group": "midfielder",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 14,
+      "label": "库普梅纳斯\n(Koopmeiners)",
+      "image": "",
+      "wiki": "Teun_Koopmeiners",
+      "title": "简介：尤文中场全能\n薪资：€4M\n现役：尤文图斯",
+      "group": "midfielder",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 15,
+      "label": "加克波\n(Gakpo)",
+      "image": "",
+      "wiki": "Cody_Gakpo",
+      "title": "简介：利物浦锋线多面手\n薪资：£120K\n现役：利物浦",
+      "group": "forward",
+      "value": 24,
+      "isMain": false
+    },
+    {
+      "id": 16,
+      "label": "马伦\n(Malen)",
+      "image": "",
+      "wiki": "Donyell_Malen",
+      "title": "简介：维拉边锋\n薪资：£100K\n现役：阿斯顿维拉",
+      "group": "forward",
+      "value": 19,
+      "isMain": false
+    },
+    {
+      "id": 17,
+      "label": "德佩\n(Depay)",
+      "image": "",
+      "wiki": "Memphis_Depay",
+      "title": "简介：荷兰队史射手王\n薪资：€5M\n现役：科林蒂安",
+      "group": "forward",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 18,
+      "label": "西蒙斯\n(Simons)",
+      "image": "",
+      "wiki": "Xavi_Simons",
+      "title": "简介：莱比锡天才\n薪资：€4M\n现役：莱比锡",
+      "group": "forward",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 19,
+      "label": "布罗比\n(Brobbey)",
+      "image": "",
+      "wiki": "Brian_Brobbey",
+      "title": "简介：阿贾克斯中锋\n薪资：€2M\n现役：阿贾克斯",
+      "group": "forward",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 20,
+      "label": "贝尔温\n(Bergwijn)",
+      "image": "",
+      "wiki": "Steven_Bergwijn",
+      "title": "简介：沙特淘金边锋\n薪资：€6M\n现役：吉达联合",
+      "group": "forward",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 21,
+      "label": "朗\n(Lang)",
+      "image": "",
+      "wiki": "Noa_Lang",
+      "title": "简介：埃因霍温边锋\n薪资：€2M\n现役：埃因霍温",
+      "group": "forward",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 22,
+      "label": "廷贝尔\n(Timber)",
+      "image": "",
+      "wiki": "Jurrien_Timber",
+      "title": "简介：阿森纳后防天才\n薪资：£120K\n现役：阿森纳",
+      "group": "defender",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 23,
+      "label": "海特勒伊达\n(Geertruida)",
+      "image": "",
+      "wiki": "Lutsharel_Geertruida",
+      "title": "简介：莱比锡后防\n薪资：€2.5M\n现役：莱比锡",
+      "group": "defender",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 24,
+      "label": "科曼\n(Koeman)",
+      "image": "",
+      "wiki": "Ronald_Koeman",
+      "title": "简介：荷兰铁血教头\n薪资：€3M\n现役：荷兰国家队",
+      "group": "coach",
+      "value": 22,
+      "isMain": true
+    }
+  ],
+  "edges": [
+    {
+      "from": 11,
+      "to": 24,
+      "label": "战术分歧",
+      "color": "#ff4d4f",
+      "width": 3,
+      "relationType": "red",
+      "summary": "德容与科曼战术体系分歧",
+      "details": "<b>【巴萨大脑VS荷兰铁腕】</b><br><br>德容坚持组织角色科曼要求防守。<br><br><b>📰 《电讯报》</b>"
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "label": "右路之战",
+      "color": "#ff4d4f",
+      "width": 2,
+      "relationType": "red",
+      "summary": "邓弗里斯与弗林蓬首发之争",
+      "details": "<b>【邓弗里斯VS弗林蓬：两个世界级右后卫的战争】</b><br><br>科曼的体系理论上可同时容纳两人，但实际操作中风格重叠严重。弗林蓬暗示更适合四后卫体系，被解读为对科曼战术的委婉批评。<br><br><b>📰 实锤来源：《电讯报》；NOS。</b>"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "后防搭档",
+      "color": "#56d364",
+      "width": 3,
+      "relationType": "green",
+      "summary": "范迪克+阿克世界级防线"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "label": "中场双核",
+      "color": "#56d364",
+      "width": 3,
+      "relationType": "green",
+      "summary": "德容+赖因德斯"
+    },
+    {
+      "from": 18,
+      "to": 15,
+      "label": "新生代锋线",
+      "color": "#56d364",
+      "width": 2.5,
+      "relationType": "green",
+      "summary": "西蒙斯+加克波新黄金一代"
+    },
+    {
+      "from": 24,
+      "to": 4,
+      "label": "绝对信任",
+      "color": "#e3b341",
+      "width": 3,
+      "relationType": "gold",
+      "summary": "科曼以范迪克为绝对领袖"
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "中卫",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "德弗赖+德里赫特"
+    },
+    {
+      "from": 16,
+      "to": 21,
+      "label": "边锋",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "马伦+朗"
+    },
+    {
+      "from": 1,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "弗莱肯是国家队成员"
+    },
+    {
+      "from": 2,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "比洛是国家队成员"
+    },
+    {
+      "from": 3,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "奥莱是国家队成员"
+    },
+    {
+      "from": 10,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "范德文是国家队成员"
+    },
+    {
+      "from": 13,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "赫拉芬贝赫是国家队成员"
+    },
+    {
+      "from": 14,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "库普梅纳斯是国家队成员"
+    },
+    {
+      "from": 17,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "德佩是国家队成员"
+    },
+    {
+      "from": 19,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "布罗比是国家队成员"
+    },
+    {
+      "from": 20,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "贝尔温是国家队成员"
+    },
+    {
+      "from": 22,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "廷贝尔是国家队成员"
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "海特勒伊达是国家队成员"
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "label": "勒沃库森新贵",
+      "color": "#ff4d4f",
+      "width": 2,
+      "relationType": "red",
+      "summary": "弗林蓬崛起后对邓弗里斯主力位置的冲击",
+      "details": "<b>【勒沃库森飞翼VS国米铁骑】</b><br><br>弗林蓬在勒沃库森不败赛季12球14助攻震惊欧洲。荷兰媒体为此展开了谁该首发的全民大讨论。<br><br><b>📰 实锤来源：《大众日报》；Voetbal International。</b>"
+    }
+  ]
+}

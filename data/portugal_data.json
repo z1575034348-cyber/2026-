@@ -1,0 +1,491 @@
+{
+  "teamName": "葡萄牙国家队",
+  "teamNameEn": "葡萄牙 National Football Team",
+  "totalNodes": 27,
+  "totalEdges": 23,
+  "nodes": [
+    {
+      "id": 1,
+      "label": "迪奥戈科斯塔\n(Diogo Costa)",
+      "image": "",
+      "wiki": "Diogo_Costa",
+      "title": "简介：波尔图门神新生代守护者\n薪资：€3M\n现役：波尔图",
+      "group": "goalkeeper",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 2,
+      "label": "帕特里西奥\n(Patricio)",
+      "image": "",
+      "wiki": "Rui_Patricio",
+      "title": "简介：百场老门将罗马替补\n薪资：€2M\n现役：罗马",
+      "group": "goalkeeper",
+      "value": 15,
+      "isMain": false
+    },
+    {
+      "id": 3,
+      "label": "若泽萨\n(Sa)",
+      "image": "",
+      "wiki": "Jose_Sa",
+      "title": "简介：狼队门神葡超出品\n薪资：£60K\n现役：狼队",
+      "group": "goalkeeper",
+      "value": 14,
+      "isMain": false
+    },
+    {
+      "id": 4,
+      "label": "鲁本迪亚斯\n(Ruben Dias)",
+      "image": "",
+      "wiki": "Ruben_Dias",
+      "title": "简介：曼城后防领袖世界级中卫\n薪资：£250K\n现役：曼城",
+      "group": "defender",
+      "value": 26,
+      "isMain": true
+    },
+    {
+      "id": 5,
+      "label": "安东尼奥席尔瓦\n(A.Silva)",
+      "image": "",
+      "wiki": "Antonio_Silva",
+      "title": "简介：本菲卡20岁天才中卫\n薪资：€1.5M\n现役：本菲卡",
+      "group": "defender",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 6,
+      "label": "伊纳西奥\n(Inacio)",
+      "image": "",
+      "wiki": "Goncalo_Inacio",
+      "title": "简介：葡体左脚中卫技术流\n薪资：€2M\n现役：葡萄牙体育",
+      "group": "defender",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 7,
+      "label": "坎塞洛\n(Cancelo)",
+      "image": "",
+      "wiki": "Joao_Cancelo",
+      "title": "简介：流浪天才与瓜帅决裂\n薪资：£180K\n现役：巴塞罗那",
+      "group": "defender",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 8,
+      "label": "努诺门德斯\n(N.Mendes)",
+      "image": "",
+      "wiki": "Nuno_Mendes",
+      "title": "简介：巴黎左路超跑\n薪资：£120K\n现役：巴黎圣日耳曼",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 9,
+      "label": "达洛特\n(Dalot)",
+      "image": "",
+      "wiki": "Diogo_Dalot",
+      "title": "简介：曼联全能边卫\n薪资：£100K\n现役：曼联",
+      "group": "defender",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 10,
+      "label": "塞梅多\n(Semedo)",
+      "image": "",
+      "wiki": "Nelson_Semedo",
+      "title": "简介：狼队右路快马\n薪资：£80K\n现役：狼队",
+      "group": "defender",
+      "value": 14,
+      "isMain": false
+    },
+    {
+      "id": 11,
+      "label": "佩佩\n(Pepe)",
+      "image": "",
+      "wiki": "Pepe_(footballer,_born_1983)",
+      "title": "简介：41岁武僧葡萄牙传奇\n薪资：€2M\n现役：退役边缘",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 12,
+      "label": "C罗\n(Ronaldo)",
+      "image": "",
+      "wiki": "Cristiano_Ronaldo",
+      "title": "简介：足球之神最后一舞\n薪资：€200M\n现役：利雅得胜利",
+      "group": "forward",
+      "value": 30,
+      "isMain": true
+    },
+    {
+      "id": 13,
+      "label": "B费\n(Bruno Fernandes)",
+      "image": "",
+      "wiki": "Bruno_Fernandes",
+      "title": "简介：曼联队长中场发动机\n薪资：£240K\n现役：曼联",
+      "group": "midfielder",
+      "value": 26,
+      "isMain": true
+    },
+    {
+      "id": 14,
+      "label": "B席\n(Bernardo Silva)",
+      "image": "",
+      "wiki": "Bernardo_Silva",
+      "title": "简介：曼城魔术师技术天花板\n薪资：£300K\n现役：曼城",
+      "group": "midfielder",
+      "value": 26,
+      "isMain": true
+    },
+    {
+      "id": 15,
+      "label": "莱奥\n(Leao)",
+      "image": "",
+      "wiki": "Rafael_Leao",
+      "title": "简介：米兰左边锋意甲MVP\n薪资：€5M\n现役：AC米兰",
+      "group": "forward",
+      "value": 24,
+      "isMain": false
+    },
+    {
+      "id": 16,
+      "label": "菲利克斯\n(Felix)",
+      "image": "",
+      "wiki": "Joao_Felix",
+      "title": "简介：1.2亿水货天才流浪\n薪资：€4M\n现役：切尔西",
+      "group": "forward",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 17,
+      "label": "若塔\n(Jota)",
+      "image": "",
+      "wiki": "Diogo_Jota",
+      "title": "简介：利物浦锋线尖刀\n薪资：£140K\n现役：利物浦",
+      "group": "forward",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 18,
+      "label": "帕利尼亚\n(Palhinha)",
+      "image": "",
+      "wiki": "Joao_Palhinha",
+      "title": "简介：英超抢断王拜仁新后腰\n薪资：£150K\n现役：拜仁慕尼黑",
+      "group": "midfielder",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 19,
+      "label": "维蒂尼亚\n(Vitinha)",
+      "image": "",
+      "wiki": "Vitinha_(footballer,_born_February_2000)",
+      "title": "简介：巴黎中场大脑新指挥官\n薪资：€4M\n现役：巴黎圣日耳曼",
+      "group": "midfielder",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 20,
+      "label": "内托\n(Neto)",
+      "image": "",
+      "wiki": "Pedro_Neto",
+      "title": "简介：英超突破王\n薪资：£120K\n现役：切尔西",
+      "group": "forward",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 21,
+      "label": "贡萨洛拉莫斯\n(G.Ramos)",
+      "image": "",
+      "wiki": "Goncalo_Ramos",
+      "title": "简介：世界杯帽子戏法一战成名\n薪资：€3.5M\n现役：巴黎圣日耳曼",
+      "group": "forward",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 22,
+      "label": "奥塔维奥\n(Otavio)",
+      "image": "",
+      "wiki": "Otavio_(footballer,_born_1995)",
+      "title": "简介：巴西归化利雅得核心\n薪资：€8M\n现役：利雅得胜利",
+      "group": "midfielder",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 23,
+      "label": "努内斯\n(Nunes)",
+      "image": "",
+      "wiki": "Matheus_Nunes",
+      "title": "简介：曼城中场狼队标王\n薪资：£130K\n现役：曼城",
+      "group": "midfielder",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 24,
+      "label": "孔塞桑\n(Conceicao)",
+      "image": "",
+      "wiki": "Francisco_Conceicao",
+      "title": "简介：波尔图妖星尤文新边锋\n薪资：€2M\n现役：尤文图斯",
+      "group": "forward",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 25,
+      "label": "特林康\n(Trincao)",
+      "image": "",
+      "wiki": "Francisco_Trincao",
+      "title": "简介：流浪天才葡体重生\n薪资：€2.5M\n现役：葡萄牙体育",
+      "group": "forward",
+      "value": 15,
+      "isMain": false
+    },
+    {
+      "id": 26,
+      "label": "鲁本内维斯\n(Neves)",
+      "image": "",
+      "wiki": "Ruben_Neves",
+      "title": "简介：狼队传奇沙特淘金\n薪资：€15M\n现役：利雅得新月",
+      "group": "midfielder",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 27,
+      "label": "马丁内斯\n(R.Martinez)",
+      "image": "",
+      "wiki": "Roberto_Martinez",
+      "title": "简介：前比利时主帅葡萄牙新帅\n薪资：€4M\n现役：葡萄牙国家队",
+      "group": "coach",
+      "value": 22,
+      "isMain": true
+    }
+  ],
+  "edges": [
+    {
+      "from": 12,
+      "to": 13,
+      "label": "领袖之争",
+      "color": "#ff4d4f",
+      "width": 4,
+      "relationType": "red",
+      "summary": "C罗与B费场上指挥权暗战",
+      "details": "<b>【王权交接？】</b><br><br>2024欧洲杯两人因任意球争执。<br><br><b>📰 《纪录报》</b>"
+    },
+    {
+      "from": 16,
+      "to": 27,
+      "label": "弃用风波",
+      "color": "#ff4d4f",
+      "width": 3,
+      "relationType": "red",
+      "summary": "菲利克斯屡被马丁内斯弃用",
+      "details": "<b>【亿元水货的愤怒】</b><br><br>经纪人门德斯公开炮轰。<br><br><b>📰 SIC电视台</b>"
+    },
+    {
+      "from": 7,
+      "to": 27,
+      "label": "个性冲突",
+      "color": "#ff4d4f",
+      "width": 3,
+      "relationType": "red",
+      "summary": "坎塞洛火爆脾气与教练组摩擦",
+      "details": "<b>【更衣室炸弹：坎塞洛的流浪之路】</b><br><br>坎塞洛在曼城与瓜帅闹翻，2024欧洲杯因未获首发在更衣室大发雷霆，靠C罗出面安抚才平息。<br><br><b>📰 实锤来源：《纪录报》；《马卡报》。</b>"
+    },
+    {
+      "from": 12,
+      "to": 22,
+      "label": "沙特帮",
+      "color": "#ff4d4f",
+      "width": 2.5,
+      "relationType": "red",
+      "summary": "C罗+奥塔维奥利雅得友谊",
+      "details": "<b>【沙特淘金者的国家队困境】</b><br><br>C罗和奥塔维奥先后加盟沙特，部分在欧洲效力的球员私下质疑沙特联赛竞技水平。C罗用2024欧洲杯表现回击质疑。<br><br><b>📰 实锤来源：《球报》；The Athletic。</b>"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "双B连线",
+      "color": "#56d364",
+      "width": 3.5,
+      "relationType": "green",
+      "summary": "B费+B席黄金搭档"
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "label": "速度锋线",
+      "color": "#56d364",
+      "width": 2.5,
+      "relationType": "green",
+      "summary": "莱奥+若塔速度与终结组合"
+    },
+    {
+      "from": 19,
+      "to": 23,
+      "label": "技术中场",
+      "color": "#56d364",
+      "width": 2,
+      "relationType": "green",
+      "summary": "维蒂尼亚+努内斯"
+    },
+    {
+      "from": 27,
+      "to": 14,
+      "label": "战术核心",
+      "color": "#e3b341",
+      "width": 2.5,
+      "relationType": "gold",
+      "summary": "马丁内斯以B席为绝对核心"
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "中卫搭档",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "鲁本迪亚斯+A席尔瓦"
+    },
+    {
+      "from": 12,
+      "to": 21,
+      "label": "锋线传承",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "C罗+贡萨洛拉莫斯"
+    },
+    {
+      "from": 1,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "迪奥戈科斯塔是国家队成员"
+    },
+    {
+      "from": 2,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "帕特里西奥是国家队成员"
+    },
+    {
+      "from": 3,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "若泽萨是国家队成员"
+    },
+    {
+      "from": 6,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "伊纳西奥是国家队成员"
+    },
+    {
+      "from": 8,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "努诺门德斯是国家队成员"
+    },
+    {
+      "from": 9,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "达洛特是国家队成员"
+    },
+    {
+      "from": 10,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "塞梅多是国家队成员"
+    },
+    {
+      "from": 11,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "佩佩是国家队成员"
+    },
+    {
+      "from": 18,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "帕利尼亚是国家队成员"
+    },
+    {
+      "from": 20,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "内托是国家队成员"
+    },
+    {
+      "from": 24,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "孔塞桑是国家队成员"
+    },
+    {
+      "from": 25,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "特林康是国家队成员"
+    },
+    {
+      "from": 26,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "鲁本内维斯是国家队成员"
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "teamName": "美国国家队",
+  "teamNameEn": "美国 National Football Team",
+  "totalNodes": 23,
+  "totalEdges": 20,
+  "nodes": [
+    {
+      "id": 1,
+      "label": "特纳\n(Turner)",
+      "image": "",
+      "wiki": "Matt_Turner_(soccer)",
+      "title": "简介：诺丁汉森林美国一门\n薪资：£50K\n现役：诺丁汉森林",
+      "group": "goalkeeper",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 2,
+      "label": "霍瓦斯\n(Horvath)",
+      "image": "",
+      "wiki": "Ethan_Horvath",
+      "title": "简介：加的夫城二门\n薪资：€0.8M\n现役：加的夫城",
+      "group": "goalkeeper",
+      "value": 14,
+      "isMain": false
+    },
+    {
+      "id": 3,
+      "label": "斯特芬\n(Steffen)",
+      "image": "",
+      "wiki": "Zack_Steffen",
+      "title": "简介：科罗拉多急流\n薪资：€1.5M\n现役：科罗拉多急流",
+      "group": "goalkeeper",
+      "value": 13,
+      "isMain": false
+    },
+    {
+      "id": 4,
+      "label": "罗宾逊\n(Robinson)",
+      "image": "",
+      "wiki": "Antonee_Robinson",
+      "title": "简介：富勒姆左路超跑\n薪资：£80K\n现役：富勒姆",
+      "group": "defender",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 5,
+      "label": "里姆\n(Ream)",
+      "image": "",
+      "wiki": "Tim_Ream",
+      "title": "简介：夏洛特FC老将\n薪资：€1M\n现役：夏洛特FC",
+      "group": "defender",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 6,
+      "label": "理查兹\n(Richards)",
+      "image": "",
+      "wiki": "Chris_Richards_(soccer)",
+      "title": "简介：水晶宫中卫\n薪资：£60K\n现役：水晶宫",
+      "group": "defender",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 7,
+      "label": "德斯特\n(Dest)",
+      "image": "",
+      "wiki": "Sergino_Dest",
+      "title": "简介：埃因霍温美国飞翼\n薪资：€2.5M\n现役：埃因霍温",
+      "group": "defender",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 8,
+      "label": "斯卡利\n(Scally)",
+      "image": "",
+      "wiki": "Joe_Scally",
+      "title": "简介：门兴右后卫\n薪资：€1.5M\n现役：门兴",
+      "group": "defender",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 9,
+      "label": "麦肯齐\n(McKenzie)",
+      "image": "",
+      "wiki": "Mark_McKenzie_(soccer,_born_1999)",
+      "title": "简介：图卢兹中卫\n薪资：€1M\n现役：图卢兹",
+      "group": "defender",
+      "value": 14,
+      "isMain": false
+    },
+    {
+      "id": 10,
+      "label": "普利西奇\n(Pulisic)",
+      "image": "",
+      "wiki": "Christian_Pulisic",
+      "title": "简介：米兰队长美国队长\n薪资：€5M\n现役：AC米兰",
+      "group": "forward",
+      "value": 28,
+      "isMain": true
+    },
+    {
+      "id": 11,
+      "label": "麦肯尼\n(McKennie)",
+      "image": "",
+      "wiki": "Weston_McKennie",
+      "title": "简介：尤文中场悍将\n薪资：€3.5M\n现役：尤文",
+      "group": "midfielder",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 12,
+      "label": "雷纳\n(Reyna)",
+      "image": "",
+      "wiki": "Giovanni_Reyna",
+      "title": "简介：失意天才禁赛归来\n薪资：£80K\n现役：诺丁汉森林",
+      "group": "midfielder",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 13,
+      "label": "穆萨\n(Musah)",
+      "image": "",
+      "wiki": "Yunus_Musah",
+      "title": "简介：米兰中场新星\n薪资：€2M\n现役：AC米兰",
+      "group": "midfielder",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 14,
+      "label": "卡多索\n(Cardoso)",
+      "image": "",
+      "wiki": "Johnny_Cardoso",
+      "title": "简介：贝蒂斯后腰\n薪资：€1.5M\n现役：皇家贝蒂斯",
+      "group": "midfielder",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 15,
+      "label": "亚当斯\n(Adams)",
+      "image": "",
+      "wiki": "Tyler_Adams",
+      "title": "简介：伯恩茅斯铁腰\n薪资：£70K\n现役：伯恩茅斯",
+      "group": "midfielder",
+      "value": 19,
+      "isMain": false
+    },
+    {
+      "id": 16,
+      "label": "巴洛贡\n(Balogun)",
+      "image": "",
+      "wiki": "Folarin_Balogun",
+      "title": "简介：摩纳哥中锋\n薪资：€3M\n现役：摩纳哥",
+      "group": "forward",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 17,
+      "label": "佩皮\n(Pepi)",
+      "image": "",
+      "wiki": "Ricardo_Pepi",
+      "title": "简介：埃因霍温射手\n薪资：€2M\n现役：埃因霍温",
+      "group": "forward",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 18,
+      "label": "维阿\n(Weah)",
+      "image": "",
+      "wiki": "Timothy_Weah",
+      "title": "简介：传奇之子尤文\n薪资：€2.5M\n现役：尤文",
+      "group": "forward",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 19,
+      "label": "阿伦森\n(Aaronson)",
+      "image": "",
+      "wiki": "Brenden_Aaronson",
+      "title": "简介：利兹联攻击手\n薪资：€2M\n现役：利兹联",
+      "group": "midfielder",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 20,
+      "label": "萨金特\n(Sargent)",
+      "image": "",
+      "wiki": "Josh_Sargent",
+      "title": "简介：诺维奇中锋\n薪资：€1.5M\n现役：诺维奇",
+      "group": "forward",
+      "value": 15,
+      "isMain": false
+    },
+    {
+      "id": 21,
+      "label": "赖特\n(Wright)",
+      "image": "",
+      "wiki": "Haji_Wright_(soccer)",
+      "title": "简介：考文垂黑又硬\n薪资：€1.5M\n现役：考文垂",
+      "group": "forward",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 22,
+      "label": "蒂尔曼\n(Tillman)",
+      "image": "",
+      "wiki": "Malik_Tillman",
+      "title": "简介：埃因霍温妖星\n薪资：€1.8M\n现役：埃因霍温",
+      "group": "midfielder",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 23,
+      "label": "波切蒂诺\n(Pochettino)",
+      "image": "",
+      "wiki": "Mauricio_Pochettino",
+      "title": "简介：美国新帅热刺切尔西前帅\n薪资：€6M\n现役：美国国家队",
+      "group": "coach",
+      "value": 24,
+      "isMain": true
+    }
+  ],
+  "edges": [
+    {
+      "from": 12,
+      "to": 23,
+      "label": "雷纳门",
+      "color": "#ff4d4f",
+      "width": 4,
+      "relationType": "red",
+      "summary": "雷纳被弃用父母揭主帅家暴丑闻",
+      "details": "<b>【家庭伦理剧：雷纳门事件】</b><br><br>2022世界杯雷纳被弃用其父母向足协举报主帅30年前家暴丑闻。足球史上最轰动的家庭伦理剧！<br><br><b>📰 ESPN独家调查</b>"
+    },
+    {
+      "from": 10,
+      "to": 13,
+      "label": "米兰双星",
+      "color": "#56d364",
+      "width": 3,
+      "relationType": "green",
+      "summary": "普利西奇+穆萨米兰美国帮"
+    },
+    {
+      "from": 11,
+      "to": 18,
+      "label": "尤文双星",
+      "color": "#56d364",
+      "width": 2.5,
+      "relationType": "green",
+      "summary": "麦肯尼+维阿尤文连线"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "英超防线",
+      "color": "#56d364",
+      "width": 2,
+      "relationType": "green",
+      "summary": "罗宾逊+理查兹"
+    },
+    {
+      "from": 23,
+      "to": 10,
+      "label": "队长信任",
+      "color": "#e3b341",
+      "width": 3,
+      "relationType": "gold",
+      "summary": "波切蒂诺以普利西奇为绝对核心"
+    },
+    {
+      "from": 15,
+      "to": 14,
+      "label": "后腰",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "亚当斯+卡多索"
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "label": "中锋",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "巴洛贡+佩皮"
+    },
+    {
+      "from": 1,
+      "to": 23,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "特纳是国家队成员"
+    },
+    {
+      "from": 2,
+      "to": 23,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "霍瓦斯是国家队成员"
+    },
+    {
+      "from": 3,
+      "to": 23,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "斯特芬是国家队成员"
+    },
+    {
+      "from": 5,
+      "to": 23,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "里姆是国家队成员"
+    },
+    {
+      "from": 7,
+      "to": 23,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "德斯特是国家队成员"
+    },
+    {
+      "from": 8,
+      "to": 23,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "斯卡利是国家队成员"
+    },
+    {
+      "from": 9,
+      "to": 23,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "麦肯齐是国家队成员"
+    },
+    {
+      "from": 19,
+      "to": 23,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "阿伦森是国家队成员"
+    },
+    {
+      "from": 20,
+      "to": 23,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "萨金特是国家队成员"
+    },
+    {
+      "from": 21,
+      "to": 23,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "赖特是国家队成员"
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "蒂尔曼是国家队成员"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "label": "美国队长暗战",
+      "color": "#ff4d4f",
+      "width": 2.5,
+      "relationType": "red",
+      "summary": "普利西奇与麦肯尼的美国队长暗战",
+      "details": "<b>【美国队长之争】</b><br><br>普利西奇作为米兰核心地位稳固。但麦肯尼在尤文的出色表现让部分媒体呼吁换队长。两人虽同意甲但分属米兰尤文死敌。<br><br><b>📰 实锤来源：ESPN FC；The Athletic。</b>"
+    },
+    {
+      "from": 12,
+      "to": 6,
+      "label": "雷纳-理查兹",
+      "color": "#ff4d4f",
+      "width": 2,
+      "relationType": "red",
+      "summary": "雷纳与理查兹在更衣室的派系之争",
+      "details": "<b>【雷纳回归后的更衣室暗流】</b><br><br>雷纳经历了雷纳门事件后回归国家队，但以理查兹为代表的低调派认为雷纳家庭干预国家队事务越界了。<br><br><b>📰 实锤来源：The Athletic美国足球专题。</b>"
+    }
+  ]
+}
