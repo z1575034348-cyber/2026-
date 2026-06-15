@@ -1,0 +1,473 @@
+{
+  "teamName": "比利时国家队",
+  "teamNameEn": "Belgium National Football Team",
+  "totalNodes": 27,
+  "totalEdges": 26,
+  "nodes": [
+    {
+      "id": 1,
+      "label": "库尔图瓦\n(Courtois)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Beau_Lowette_%26_Thibaut_Courtois_%28cropped%29.jpg/330px-Beau_Lowette_%26_Thibaut_Courtois_%28cropped%29.jpg",
+      "title": "简介：比利时叹息之墙，更衣室暗流之王\n薪资：周薪 £250,000\n现役：皇家马德里 (Real Madrid)",
+      "group": "goalkeeper",
+      "value": 25
+    },
+    {
+      "id": 2,
+      "label": "塞尔斯\n(Sels)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Matz_Sels_USMNT_v_Belgium_Mar_28_2026-12_%28cropped%29.jpg/330px-Matz_Sels_USMNT_v_Belgium_Mar_28_2026-12_%28cropped%29.jpg",
+      "title": "简介：低调可靠的二门，诺丁汉防线定海针\n薪资：周薪 £45,000\n现役：诺丁汉森林 (Nottingham Forest)",
+      "group": "goalkeeper",
+      "value": 14
+    },
+    {
+      "id": 3,
+      "label": "卡斯特尔斯\n(Casteels)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/FC_Salzburg_gegen_VfL_Wolfsburg_%28CL-Gruppenphase_20._Oktober_2021%29_75.jpg/330px-FC_Salzburg_gegen_VfL_Wolfsburg_%28CL-Gruppenphase_20._Oktober_2021%29_75.jpg",
+      "title": "简介：沙特淘金者，曾与库尔图瓦争一门\n薪资：年薪 €800万\n现役：卡迪西亚 (Al-Qadsiah)",
+      "group": "goalkeeper",
+      "value": 13
+    },
+    {
+      "id": 4,
+      "label": "维尔通亨\n(Vertonghen)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Jan_Vertonghen_14_Jul_2018.jpg/330px-Jan_Vertonghen_14_Jul_2018.jpg",
+      "title": "简介：比利时出场王，黄金一代最后的老冰棍\n薪资：年薪 €150万\n现役：安德莱赫特 (Anderlecht)",
+      "group": "defender",
+      "value": 20
+    },
+    {
+      "id": 5,
+      "label": "费斯\n(Faes)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Wout_Faes_23082025_%281%29_%28cropped%29.jpg/330px-Wout_Faes_23082025_%281%29_%28cropped%29.jpg",
+      "title": "简介：后防新一代领袖，乌龙球锦鲤体质\n薪资：周薪 £50,000\n现役：莱斯特城 (Leicester City)",
+      "group": "defender",
+      "value": 16
+    },
+    {
+      "id": 6,
+      "label": "德巴斯特\n(Debast)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Zeno_Debast_USMNT_v_Belgium_Mar_28_2026-80_%28cropped%29.jpg/330px-Zeno_Debast_USMNT_v_Belgium_Mar_28_2026-80_%28cropped%29.jpg",
+      "title": "简介：00后后防天才，比利时版斯通斯\n薪资：年薪 €120万\n现役：葡萄牙体育 (Sporting CP)",
+      "group": "defender",
+      "value": 15
+    },
+    {
+      "id": 7,
+      "label": "特亚特\n(Theate)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Arthur_Theate_USMNT_v_Belgium_Mar_28_2026-22_%28cropped%29.jpg/330px-Arthur_Theate_USMNT_v_Belgium_Mar_28_2026-22_%28cropped%29.jpg",
+      "title": "简介：左脚出球中卫，法甲冉冉升起的后防新星\n薪资：年薪 €180万\n现役：雷恩 (Stade Rennais)",
+      "group": "defender",
+      "value": 15
+    },
+    {
+      "id": 8,
+      "label": "卡斯塔涅\n(Castagne)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Timothy_Castagne_USMNT_v_Belgium_Mar_28_2026-17_%28cropped%29.jpg/330px-Timothy_Castagne_USMNT_v_Belgium_Mar_28_2026-17_%28cropped%29.jpg",
+      "title": "简介：左右通吃的全能边卫，富勒姆体系润滑剂\n薪资：周薪 £70,000\n现役：富勒姆 (Fulham)",
+      "group": "defender",
+      "value": 16
+    },
+    {
+      "id": 9,
+      "label": "默尼耶\n(Meunier)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Thomas_Meunier_USMNT_v_Belgium_Mar_28_2026-16_%28cropped%29.jpg/330px-Thomas_Meunier_USMNT_v_Belgium_Mar_28_2026-16_%28cropped%29.jpg",
+      "title": "简介：大胡子带刀侍卫，进攻型右边卫老炮\n薪资：年薪 €200万\n现役：里尔 (Lille)",
+      "group": "defender",
+      "value": 14
+    },
+    {
+      "id": 10,
+      "label": "德克伊珀\n(De Cuyper)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Maxim_De_Cuyper_USMNT_v_Belgium_Mar_28_2026-79_%28cropped%29.jpg/330px-Maxim_De_Cuyper_USMNT_v_Belgium_Mar_28_2026-79_%28cropped%29.jpg",
+      "title": "简介：左路新锐快马，比利时未来十年左闸答案\n薪资：年薪 €80万\n现役：布鲁日 (Club Brugge)",
+      "group": "defender",
+      "value": 13
+    },
+    {
+      "id": 11,
+      "label": "阿尔德韦雷尔德\n(Alderweireld)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/2020-03-10_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League_Achtelfinale%2C_RB_Leipzig_-_Tottenham_Hotspur_1DX_3693_by_Stepro_%28cropped%29.jpg/330px-2020-03-10_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League_Achtelfinale%2C_RB_Leipzig_-_Tottenham_Hotspur_1DX_3693_by_Stepro_%28cropped%29.jpg",
+      "title": "简介：黄金一代后防基石，老而弥坚的安特卫普队长\n薪资：年薪 €200万\n现役：安特卫普 (Royal Antwerp)",
+      "group": "defender",
+      "value": 18
+    },
+    {
+      "id": 12,
+      "label": "德布劳内\n(De Bruyne)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_%28cropped%29.jpg/330px-Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_%28cropped%29.jpg",
+      "title": "简介：世界第一喂饼大师，曼城蓝色心脏\n薪资：周薪 £400,000\n现役：曼彻斯特城 (Manchester City)",
+      "group": "midfielder",
+      "value": 30,
+      "isMain": true
+    },
+    {
+      "id": 13,
+      "label": "奥纳纳\n(Onana)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Amadou_Onana_USMNT_v_Belgium_Mar_28_2026-96_%28cropped%29.jpg/330px-Amadou_Onana_USMNT_v_Belgium_Mar_28_2026-96_%28cropped%29.jpg",
+      "title": "简介：黑又硬全能中场，维拉新野兽后腰\n薪资：周薪 £100,000\n现役：阿斯顿维拉 (Aston Villa)",
+      "group": "midfielder",
+      "value": 18
+    },
+    {
+      "id": 14,
+      "label": "蒂勒曼斯\n(Tielemans)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Youri_Tielemans_USMNT_v_Belgium_Mar_28_2026-20_%28cropped%29.jpg/330px-Youri_Tielemans_USMNT_v_Belgium_Mar_28_2026-20_%28cropped%29.jpg",
+      "title": "简介：远射世界波专业户，中场节拍器\n薪资：周薪 £120,000\n现役：阿斯顿维拉 (Aston Villa)",
+      "group": "midfielder",
+      "value": 18
+    },
+    {
+      "id": 15,
+      "label": "曼加拉\n(Mangala)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Orel_mangala.jpg/330px-Orel_mangala.jpg",
+      "title": "简介：法甲抢断机器，低调的中场蓝领工人\n薪资：年薪 €250万\n现役：里昂 (Olympique Lyonnais)",
+      "group": "midfielder",
+      "value": 14
+    },
+    {
+      "id": 16,
+      "label": "弗兰克斯\n(Vranckx)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/FC_Salzburg_gegen_VfL_Wolfsburg_%28CL-Gruppenphase_20._Oktober_2021%29_77_%28cropped%29.jpg/330px-FC_Salzburg_gegen_VfL_Wolfsburg_%28CL-Gruppenphase_20._Oktober_2021%29_77_%28cropped%29.jpg",
+      "title": "简介：狼堡B2B小钢炮，比利时中场未来储备\n薪资：年薪 €150万\n现役：沃尔夫斯堡 (VfL Wolfsburg)",
+      "group": "midfielder",
+      "value": 13
+    },
+    {
+      "id": 17,
+      "label": "瓦纳肯\n(Vanaken)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Hans_Vanaken_Lommel_United.jpg/330px-Hans_Vanaken_Lommel_United.jpg",
+      "title": "简介：比甲三届金靴中场，俱乐部球王国家队遗珠\n薪资：年薪 €200万\n现役：布鲁日 (Club Brugge)",
+      "group": "midfielder",
+      "value": 14
+    },
+    {
+      "id": 18,
+      "label": "维特塞尔\n(Witsel)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Axel_Witsel_USMNT_v_Belgium_Mar_28_2026-34_%28cropped%29.jpg/330px-Axel_Witsel_USMNT_v_Belgium_Mar_28_2026-34_%28cropped%29.jpg",
+      "title": "简介：从后腰踢到中卫的万金油老妖\n薪资：周薪 £80,000\n现役：马德里竞技 (Atletico Madrid)",
+      "group": "midfielder",
+      "value": 17
+    },
+    {
+      "id": 19,
+      "label": "卢卡库\n(Lukaku)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Romelu_Lukaku_2021.jpg/330px-Romelu_Lukaku_2021.jpg",
+      "title": "简介：比利时历史射手王，世界杯快乐足球代言人\n薪资：周薪 £200,000\n现役：那不勒斯 (Napoli)",
+      "group": "forward",
+      "value": 25
+    },
+    {
+      "id": 20,
+      "label": "特罗萨德\n(Trossard)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/RC_Lens_-_Arsenal_FC_%2803-10-2023%29_26_%28cropped%29.jpg/330px-RC_Lens_-_Arsenal_FC_%2803-10-2023%29_26_%28cropped%29.jpg",
+      "title": "简介：前场万能补丁，阿森纳板凳匪徒\n薪资：周薪 £120,000\n现役：阿森纳 (Arsenal)",
+      "group": "forward",
+      "value": 19
+    },
+    {
+      "id": 21,
+      "label": "多库\n(Doku)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/J%C3%A9r%C3%A9my_Doku_USMNT_v_Belgium_Mar_28_2026-27_%28cropped%29.jpg/330px-J%C3%A9r%C3%A9my_Doku_USMNT_v_Belgium_Mar_28_2026-27_%28cropped%29.jpg",
+      "title": "简介：边路爆破小坦克，丁老师曼城首席爱徒\n薪资：周薪 £100,000\n现役：曼彻斯特城 (Manchester City)",
+      "group": "forward",
+      "value": 19
+    },
+    {
+      "id": 22,
+      "label": "奥蓬达\n(Openda)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Lo%C3%AFs_Openda_USMNT_v_Belgium_Mar_28_2026-19_%28cropped%29.jpg/330px-Lo%C3%AFs_Openda_USMNT_v_Belgium_Mar_28_2026-19_%28cropped%29.jpg",
+      "title": "简介：RB莱比锡速度狂魔，法甲到德甲无缝输出\n薪资：年薪 €350万\n现役：RB莱比锡 (RB Leipzig)",
+      "group": "forward",
+      "value": 18
+    },
+    {
+      "id": 23,
+      "label": "巴卡约科\n(Bakayoko)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Johan_Bakayoko_%282024%29.jpg/330px-Johan_Bakayoko_%282024%29.jpg",
+      "title": "简介：荷甲妖人边锋，埃因霍温最新出口爆款\n薪资：年薪 €120万\n现役：PSV埃因霍温 (PSV Eindhoven)",
+      "group": "forward",
+      "value": 16
+    },
+    {
+      "id": 24,
+      "label": "卢克巴基奥\n(Lukebakio)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Dodi_Luk%C3%A9bakio_USMNT_v_Belgium_Mar_28_2026-212_%28cropped%29.jpg/330px-Dodi_Luk%C3%A9bakio_USMNT_v_Belgium_Mar_28_2026-212_%28cropped%29.jpg",
+      "title": "简介：前柏林赫塔大腿，西甲边路爆点\n薪资：年薪 €250万\n现役：塞维利亚 (Sevilla)",
+      "group": "forward",
+      "value": 15
+    },
+    {
+      "id": 25,
+      "label": "德凯特拉雷\n(De Ketelaere)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Charles_De_Ketelaere_USMNT_v_Belgium_Mar_28_2026-76_%28cropped%29.jpg/330px-Charles_De_Ketelaere_USMNT_v_Belgium_Mar_28_2026-76_%28cropped%29.jpg",
+      "title": "简介：米兰弃子->亚特兰大重生，足球版重生文男主\n薪资：年薪 €220万\n现役：亚特兰大 (Atalanta)",
+      "group": "forward",
+      "value": 17
+    },
+    {
+      "id": 26,
+      "label": "萨勒马科尔斯\n(Saelemaekers)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Alexis_Saelemaekers_USMNT_v_Belgium_Mar_28_2026-13_%28cropped%29.jpg/330px-Alexis_Saelemaekers_USMNT_v_Belgium_Mar_28_2026-13_%28cropped%29.jpg",
+      "title": "简介：米兰飞翼->罗马重生，意甲流浪者终找到家\n薪资：年薪 €180万\n现役：罗马 (AS Roma)",
+      "group": "forward",
+      "value": 15
+    },
+    {
+      "id": 27,
+      "label": "特德斯科\n(Tedesco)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/2022-07-30_Fu%C3%9Fball%2C_M%C3%A4nner%2C_DFL-Supercup%2C_RB_Leipzig_-_FC_Bayern_M%C3%BCnchen_1DX_3195_by_Stepro_%28Domenico_Tedesco%29.jpg/330px-2022-07-30_Fu%C3%9Fball%2C_M%C3%A4nner%2C_DFL-Supercup%2C_RB_Leipzig_-_FC_Bayern_M%C3%BCnchen_1DX_3195_by_Stepro_%28Domenico_Tedesco%29.jpg",
+      "title": "简介：少帅接手烂摊，比利时重建总设计师\n薪资：年薪 €300万\n现役：比利时国家队主教练",
+      "group": "coach",
+      "value": 22,
+      "isMain": true
+    }
+  ],
+  "edges": [
+    {
+      "from": 12,
+      "to": 1,
+      "label": "友妻门",
+      "color": "#ff4d4f",
+      "width": 4,
+      "relationType": "red",
+      "summary": "比利时足球史上最轰动的「友妻门」事件",
+      "details": "<b>【友妻门：比利时足球史上最大的裂痕】</b><br><br>2013年，当时还是根特小将的库尔图瓦，与德布劳内的前女友卡罗琳·利嫩发生了一段不可描述的关系。要知道，卡罗琳在德布劳内租借不来梅那段最艰苦的岁月里一直陪伴左右，两人甚至有结婚的打算。<br><br>事情曝光后，德布劳内暴怒，直接找到时任国家队主帅威尔莫茨要求开除库尔图瓦。威尔莫茨极力安抚才勉强压住事态。但从此以后，两人在国家队集训时<b>基本互不交谈</b>——一个在更衣室东边换衣服，另一个就一定在西边。<br><br>吃瓜群众辣评：<b>\"球场上传球有多默契，球场下就有多相看两厌。\"</b><br><br><b>📰 实锤来源：</b>The Guardian、BBC Sport曾多次报道此事件。德布劳内在2019年自传纪录片中暗示此事对他与库尔图瓦关系的影响。比利时《新闻报》(Het Nieuwsblad)在2014年首次曝光。"
+    },
+    {
+      "from": 1,
+      "to": 27,
+      "label": "队长风波",
+      "color": "#ff4d4f",
+      "width": 3.5,
+      "relationType": "red",
+      "summary": "2023年库尔图瓦因袖标争议愤然离队",
+      "details": "<b>【库尔图瓦 VS 特德斯科：队长袖标引发的退队风暴】</b><br><br>2023年6月，比利时欧洲杯预选赛对阵奥地利前夕，库尔图瓦原以为自己作为队内最大牌之一将佩戴队长袖标上阵。但少帅特德斯科却将袖标交给了卢卡库——理由是\"我们需要前锋线的领导力\"。<br><br>库尔图瓦当场黑脸，在更衣室里当着全队的面与特德斯科<b>正面硬刚</b>。据比利时媒体爆料，库尔图瓦直言\"如果你不尊重我，那我就不踢了\"。第二天一早，库尔图瓦直接收拾行李离开训练营，连招呼都没打。<br><br>库尔图瓦随后公开声明：<b>\"只要特德斯科还在执教，我就不回国家队。\"</b><br><br>吃瓜群众辣评：<b>\"从友妻门到袖标门，库尔图瓦的比利时生涯可谓宫斗不断。\"</b><br><br><b>📰 实锤来源：</b>ESPN FC 2023年6月报道；库尔图瓦本人Instagram公开声明；《队报》(L'Equipe)对比利时队内矛盾的深度调查。"
+    },
+    {
+      "from": 12,
+      "to": 4,
+      "label": "\"我们太老了\"",
+      "color": "#ff4d4f",
+      "width": 2.5,
+      "relationType": "red",
+      "summary": "2022世界杯德布劳内毒舌引老将集体破防",
+      "details": "<b>【\"我们太老了\"：一句话引爆黄金一代公墓】</b><br><br>2022卡塔尔世界杯前夕，德布劳内在接受《卫报》采访时语出惊人：<b>\"我认为比利时没有机会夺冠——我们太老了。\"</b><br><br>这句话像一颗炸弹丢进了比利时更衣室。35岁的后防老将维尔通亨当场破防，在输给摩洛哥后接受采访时直接开怼：\"也许是我们前锋进不了球的原因吧？我没法评价，更衣室的事情不方便在外面说。\"言下之意——<b>\"你德布劳内自己踢得也不咋地，好意思说我们老？\"</b><br><br>随后更衣室爆发<b>多人激烈争吵</b>，场面几乎失控。吃瓜群众辣评：<b>\"丁老师的嘴，比利时的泪。\"</b><br><br><b>📰 实锤来源：</b>德布劳内2022年11月《卫报》(The Guardian)专访原文；维尔通亨赛后混合采访区回应被多家媒体记录；Sky Sports赛后更衣室冲突报道。"
+    },
+    {
+      "from": 1,
+      "to": 19,
+      "label": "更衣室内讧",
+      "color": "#ff4d4f",
+      "width": 3,
+      "relationType": "red",
+      "summary": "2022世界杯输摩洛哥后更衣室险些上演全武行",
+      "details": "<b>【2022卡塔尔更衣室内讧：一场输球引发的三国杀】</b><br><br>2022年11月27日，比利时0-2爆冷输给摩洛哥。赛后阿尔苏马马球场的更衣室里，气氛比沙漠的夜晚还要冷。<br><br>库尔图瓦首先发难，指责前场球员\"散步式防守\"，矛头直指卢卡库和阿扎尔。卢卡库当场回怼：\"你先把门守好再说别人！\" 双方<b>从对骂升级到推搡</b>，阿扎尔试图劝架反被两人同时怼，场面一度完全失控。<br><br>据随队记者描述，老将维尔马伦不得不<b>用身体挡在两拨人之间</b>，大喊\"我们还在比赛期间，能不能先别丢人了！\"才勉强镇住场面。<br><br>吃瓜群众辣评：<b>\"黄金一代最后的谢幕，不是输给对手，而是输给了自己人的内耗。\"</b><br><br><b>📰 实锤来源：</b>RTL Sport比利时随队记者Alexandre Braeckman的现场报道；《每日邮报》(Daily Mail)引用匿名球员证词；HLN.be对维尔马伦的独家采访。"
+    },
+    {
+      "from": 12,
+      "to": 21,
+      "label": "曼城师徒",
+      "color": "#56d364",
+      "width": 3,
+      "relationType": "green",
+      "summary": "曼城+国家队双重绑定，丁老师手把手带新人",
+      "details": "<b>【曼城师徒：德布劳内与多库的蓝色传承】</b><br><br>2023年夏天，多库以6000万欧元从雷恩转会曼城，德布劳内立即将他收为\"关门弟子\"。在曼城训练中，丁老师经常把多库叫到一边，一对一教他传中时机选择和跑位路线。<br><br>多库曾公开表示：\"在曼城和比利时，Kevin就像我的导师。\"两人在国家队的配合也越来越默契——丁老师的直塞+多库的爆趟已经成为比利时左路进攻的<b>固定节目</b>。"
+    },
+    {
+      "from": 12,
+      "to": 19,
+      "label": "喂饼连线",
+      "color": "#56d364",
+      "width": 3.5,
+      "relationType": "green",
+      "summary": "比利时历史最佳进攻二人组",
+      "details": "<b>【喂饼连线：德布劳内+卢卡库的黄金方程式】</b><br><br>放眼比利时足球史，没有任何一对组合能像德布劳内和卢卡库这样稳定输出。德布劳内的致命直塞+卢卡库的强力终结，堪称教科书级别的\"喂饼-吃饼\"闭环。<br><br>据统计，德布劳内国家队生涯超过三分之一的助攻都送给了卢卡库。即使在2022世界杯最黑暗的时刻，丁老师也公开力挺：<b>\"罗梅鲁是比利时最好的9号。\"</b>"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "维拉双星",
+      "color": "#56d364",
+      "width": 2.5,
+      "relationType": "green",
+      "summary": "俱乐部队友兼国家队中场黄金搭档",
+      "details": "<b>【维拉双星：奥纳纳与蒂勒曼斯的英格兰连线】</b><br><br>两人前后脚加盟阿斯顿维拉，在中场形成了完美的互补：奥纳纳负责扫荡拦截、蒂勒曼斯负责组织出球。维拉球迷戏称他们为\"比利时牌双引擎\"。"
+    },
+    {
+      "from": 18,
+      "to": 4,
+      "label": "老将联盟",
+      "color": "#56d364",
+      "width": 2.5,
+      "relationType": "green",
+      "summary": "黄金一代最后两位坚守者",
+      "details": "<b>【老将联盟：维特塞尔与维尔通亨的最后共舞】</b><br><br>两人一同经历了2014到2026整整十二年的国家队征程，见证比利时从鱼腩一路杀到世界第一。2024欧洲杯后，两人约定：<b>\"再踢一届世界杯，然后一起挂靴。\"</b>"
+    },
+    {
+      "from": 22,
+      "to": 25,
+      "label": "新生代攻击线",
+      "color": "#56d364",
+      "width": 2.5,
+      "relationType": "green",
+      "summary": "比利时后黄金时代的进攻双子星",
+      "details": "<b>【新生代双子星：奥蓬达 & 德凯特拉雷】</b><br><br>在黄金一代逐渐淡出之后，奥蓬达和德凯特拉雷被比利时媒体称为\"后黄金时代的希望之光\"。两人年龄相仿、球风互补。"
+    },
+    {
+      "from": 21,
+      "to": 23,
+      "label": "边路新势力",
+      "color": "#56d364",
+      "width": 2,
+      "relationType": "green",
+      "summary": "比利时边路换代的新生力量",
+      "details": "<b>【边路新势力：多库与巴卡约科的极速接力】</b><br><br>随着卡拉斯科和阿扎尔逐渐淡出，多库和巴卡约科代表比利时边路的新一代。两人在国家队训练中经常互相对位切磋。"
+    },
+    {
+      "from": 13,
+      "to": 19,
+      "label": "埃弗顿旧谊",
+      "color": "#56d364",
+      "width": 2,
+      "relationType": "green",
+      "summary": "在埃弗顿建立的深厚友谊",
+      "details": "<b>【埃弗顿旧谊：卢卡库与奥纳纳的太妃糖记忆】</b><br><br>卢卡库作为埃弗顿传奇前锋，在奥纳纳加盟太妃糖时专门发消息鼓励后辈：\"古迪逊公园的球迷是最好的。\""
+    },
+    {
+      "from": 4,
+      "to": 11,
+      "label": "十年搭档",
+      "color": "#e3b341",
+      "width": 3,
+      "relationType": "gold",
+      "summary": "热刺+国家队十年中卫搭档，彼此闭着眼都知道对方站位"
+    },
+    {
+      "from": 27,
+      "to": 12,
+      "label": "战术核心",
+      "color": "#8b949e",
+      "width": 2,
+      "relationType": "white",
+      "summary": "特德斯科战术体系中的绝对核心"
+    },
+    {
+      "from": 27,
+      "to": 19,
+      "label": "队长信任",
+      "color": "#8b949e",
+      "width": 2,
+      "relationType": "white",
+      "summary": "特德斯科力排众议将袖标交给卢卡库"
+    },
+    {
+      "from": 20,
+      "to": 25,
+      "label": "位置竞争",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "前场多面手之间的良性位置竞争"
+    },
+    {
+      "from": 14,
+      "to": 8,
+      "label": "莱斯特旧友",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "曾在莱斯特城并肩作战"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "新中卫组合",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "新生代中卫搭档，接班老将组合"
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "label": "二门之争",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "库尔图瓦缺阵时轮流竞争首发门将"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "label": "右路轮换",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "老将与新锐的右边卫位置传承"
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "label": "中场替补搭档",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "国家队中场轮换搭档"
+    },
+    {
+      "from": 24,
+      "to": 26,
+      "label": "边锋轮换",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "边锋位置的轮换竞争者"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "label": "比甲纽带",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "都有比甲踢球经历"
+    },
+    {
+      "from": 12,
+      "to": 20,
+      "label": "进攻辅助",
+      "color": "#8b949e",
+      "width": 2,
+      "relationType": "white",
+      "summary": "国家队前场进攻组合搭档"
+    },
+    {
+      "from": 27,
+      "to": 6,
+      "label": "重点培养",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "特德斯科重点提拔的年轻后卫"
+    },
+    {
+      "from": 27,
+      "to": 22,
+      "label": "锋线新核",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "特德斯科力推的新一代锋线核心"
+    },
+    {
+      "from": 7,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "特亚特是国家队成员"
+    }
+  ]
+}

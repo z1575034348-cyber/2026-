@@ -1,0 +1,509 @@
+{
+  "teamName": "阿根廷国家队",
+  "teamNameEn": "阿根廷 National Football Team",
+  "totalNodes": 27,
+  "totalEdges": 25,
+  "nodes": [
+    {
+      "id": 1,
+      "label": "大马丁\n(E.Martinez)",
+      "image": "",
+      "wiki": "Emiliano_Martinez",
+      "title": "简介：世界杯点球之神\n薪资：£120K\n现役：阿斯顿维拉",
+      "group": "goalkeeper",
+      "value": 26,
+      "isMain": true
+    },
+    {
+      "id": 2,
+      "label": "鲁利\n(Rulli)",
+      "image": "",
+      "wiki": "Geronimo_Rulli",
+      "title": "简介：稳定二门\n薪资：€2M\n现役：阿贾克斯",
+      "group": "goalkeeper",
+      "value": 14,
+      "isMain": false
+    },
+    {
+      "id": 3,
+      "label": "穆索\n(Musso)",
+      "image": "",
+      "wiki": "Juan_Musso",
+      "title": "简介：亚特兰大门神\n薪资：€1.8M\n现役：亚特兰大",
+      "group": "goalkeeper",
+      "value": 13,
+      "isMain": false
+    },
+    {
+      "id": 4,
+      "label": "罗梅罗\n(Romero)",
+      "image": "",
+      "wiki": "Cristian_Romero",
+      "title": "简介：热刺后防野兽\n薪资：£165K\n现役：热刺",
+      "group": "defender",
+      "value": 24,
+      "isMain": true
+    },
+    {
+      "id": 5,
+      "label": "奥塔门迪\n(Otamendi)",
+      "image": "",
+      "wiki": "Nicolas_Otamendi",
+      "title": "简介：本菲卡老将精神领袖\n薪资：€3M\n现役：本菲卡",
+      "group": "defender",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 6,
+      "label": "利马\n(Lisandro)",
+      "image": "",
+      "wiki": "Lisandro_Martinez",
+      "title": "简介：曼联屠夫铁血中卫\n薪资：£150K\n现役：曼联",
+      "group": "defender",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 7,
+      "label": "莫利纳\n(Molina)",
+      "image": "",
+      "wiki": "Nahuel_Molina",
+      "title": "简介：马竞右后卫世界杯主力\n薪资：€3.5M\n现役：马竞",
+      "group": "defender",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 8,
+      "label": "塔利亚菲科\n(Tagliafico)",
+      "image": "",
+      "wiki": "Nicolas_Tagliafico",
+      "title": "简介：里昂左后卫老黄牛\n薪资：€2.5M\n现役：里昂",
+      "group": "defender",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 9,
+      "label": "阿库尼亚\n(Acuna)",
+      "image": "",
+      "wiki": "Marcos_Acuna",
+      "title": "简介：塞维利亚左路铁闸\n薪资：€2M\n现役：塞维利亚",
+      "group": "defender",
+      "value": 15,
+      "isMain": false
+    },
+    {
+      "id": 10,
+      "label": "麦卡利斯特\n(Mac Allister)",
+      "image": "",
+      "wiki": "Alexis_Mac_Allister",
+      "title": "简介：利物浦大脑世界杯核心\n薪资：£150K\n现役：利物浦",
+      "group": "midfielder",
+      "value": 24,
+      "isMain": true
+    },
+    {
+      "id": 11,
+      "label": "恩佐\n(Enzo)",
+      "image": "",
+      "wiki": "Enzo_Fernandez",
+      "title": "简介：切尔西亿元先生\n薪资：£180K\n现役：切尔西",
+      "group": "midfielder",
+      "value": 24,
+      "isMain": false
+    },
+    {
+      "id": 12,
+      "label": "梅西\n(Messi)",
+      "image": "",
+      "wiki": "Lionel_Messi",
+      "title": "简介：足球之王迈阿密传奇\n薪资：€50M\n现役：迈阿密国际",
+      "group": "forward",
+      "value": 30,
+      "isMain": true
+    },
+    {
+      "id": 13,
+      "label": "阿尔瓦雷斯\n(Alvarez)",
+      "image": "",
+      "wiki": "Julian_Alvarez",
+      "title": "简介：马竞新锋霸世界杯射手\n薪资：€6M\n现役：马竞",
+      "group": "forward",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 14,
+      "label": "劳塔罗\n(Lautaro)",
+      "image": "",
+      "wiki": "Lautaro_Martinez",
+      "title": "简介：国米队长意甲射手王\n薪资：€6M\n现役：国际米兰",
+      "group": "forward",
+      "value": 24,
+      "isMain": false
+    },
+    {
+      "id": 15,
+      "label": "迪马利亚\n(Di Maria)",
+      "image": "",
+      "wiki": "Angel_Di_Maria",
+      "title": "简介：决赛之王本菲卡传奇\n薪资：€4M\n现役：本菲卡",
+      "group": "forward",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 16,
+      "label": "德保罗\n(De Paul)",
+      "image": "",
+      "wiki": "Rodrigo_De_Paul",
+      "title": "简介：梅西的保镖马竞斗士\n薪资：€4M\n现役：马竞",
+      "group": "midfielder",
+      "value": 22,
+      "isMain": false
+    },
+    {
+      "id": 17,
+      "label": "帕雷德斯\n(Paredes)",
+      "image": "",
+      "wiki": "Leandro_Paredes",
+      "title": "简介：罗马中场悍将\n薪资：€3.5M\n现役：罗马",
+      "group": "midfielder",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 18,
+      "label": "洛塞尔索\n(Lo Celso)",
+      "image": "",
+      "wiki": "Giovani_Lo_Celso",
+      "title": "简介：贝蒂斯重生\n薪资：€3M\n现役：皇家贝蒂斯",
+      "group": "midfielder",
+      "value": 17,
+      "isMain": false
+    },
+    {
+      "id": 19,
+      "label": "加纳乔\n(Garnacho)",
+      "image": "",
+      "wiki": "Alejandro_Garnacho",
+      "title": "简介：曼联天才边锋未来之星\n薪资：£75K\n现役：曼联",
+      "group": "forward",
+      "value": 18,
+      "isMain": false
+    },
+    {
+      "id": 20,
+      "label": "尼科冈萨雷斯\n(N.Gonzalez)",
+      "image": "",
+      "wiki": "Nicolas_Gonzalez_(footballer,_born_1998)",
+      "title": "简介：尤文边路快马\n薪资：€3.5M\n现役：尤文图斯",
+      "group": "forward",
+      "value": 16,
+      "isMain": false
+    },
+    {
+      "id": 21,
+      "label": "迪巴拉\n(Dybala)",
+      "image": "",
+      "wiki": "Paulo_Dybala",
+      "title": "简介：罗马小魔仙天才边缘人\n薪资：€4.5M\n现役：罗马",
+      "group": "forward",
+      "value": 20,
+      "isMain": false
+    },
+    {
+      "id": 22,
+      "label": "苏莱\n(Soule)",
+      "image": "",
+      "wiki": "Matias_Soule",
+      "title": "简介：阿根廷新梅西\n薪资：€2M\n现役：罗马",
+      "group": "forward",
+      "value": 15,
+      "isMain": false
+    },
+    {
+      "id": 23,
+      "label": "巴列尔迪\n(Balerdi)",
+      "image": "",
+      "wiki": "Leonardo_Balerdi",
+      "title": "简介：马赛后防核心\n薪资：€2.5M\n现役：马赛",
+      "group": "defender",
+      "value": 15,
+      "isMain": false
+    },
+    {
+      "id": 24,
+      "label": "卡博尼\n(Carboni)",
+      "image": "",
+      "wiki": "Valentin_Carboni",
+      "title": "简介：国米外租新星\n薪资：€1.5M\n现役：蒙扎",
+      "group": "midfielder",
+      "value": 14,
+      "isMain": false
+    },
+    {
+      "id": 25,
+      "label": "阿尔马达\n(Almada)",
+      "image": "",
+      "wiki": "Thiago_Almada",
+      "title": "简介：MLS天才世界杯成员\n薪资：€2M\n现役：博塔弗戈",
+      "group": "midfielder",
+      "value": 15,
+      "isMain": false
+    },
+    {
+      "id": 26,
+      "label": "梅迪纳\n(Medina)",
+      "image": "",
+      "wiki": "Facundo_Medina",
+      "title": "简介：朗斯后防新星\n薪资：€1.5M\n现役：朗斯",
+      "group": "defender",
+      "value": 14,
+      "isMain": false
+    },
+    {
+      "id": 27,
+      "label": "斯卡洛尼\n(Scaloni)",
+      "image": "",
+      "wiki": "Lionel_Scaloni",
+      "title": "简介：世界杯冠军少帅教父\n薪资：€2.6M\n现役：阿根廷国家队",
+      "group": "coach",
+      "value": 24,
+      "isMain": true
+    }
+  ],
+  "edges": [
+    {
+      "from": 14,
+      "to": 13,
+      "label": "9号暗战",
+      "color": "#ff4d4f",
+      "width": 3,
+      "relationType": "red",
+      "summary": "劳塔罗与阿尔瓦雷斯首发之争",
+      "details": "<b>【9号诅咒】</b><br><br>劳塔罗国米进球如麻国家队进球荒。<br><br><b>📰 《奥莱报》</b>"
+    },
+    {
+      "from": 21,
+      "to": 27,
+      "label": "失意天才",
+      "color": "#ff4d4f",
+      "width": 3,
+      "relationType": "red",
+      "summary": "迪巴拉在斯卡洛尼体系被边缘化",
+      "details": "<b>【小魔仙的落寞】</b><br><br>俱乐部核心国家队无位置。<br><br><b>📰 TyC Sports</b>"
+    },
+    {
+      "from": 12,
+      "to": 14,
+      "label": "冠军师徒",
+      "color": "#56d364",
+      "width": 4,
+      "relationType": "green",
+      "summary": "梅西与斯卡洛尼患难师徒情"
+    },
+    {
+      "from": 12,
+      "to": 16,
+      "label": "梅西保镖",
+      "color": "#56d364",
+      "width": 3.5,
+      "relationType": "green",
+      "summary": "德保罗：我为梅西而战"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "label": "中场双核",
+      "color": "#56d364",
+      "width": 3,
+      "relationType": "green",
+      "summary": "麦卡利斯特+恩佐现在与未来"
+    },
+    {
+      "from": 12,
+      "to": 15,
+      "label": "老友连线",
+      "color": "#56d364",
+      "width": 3,
+      "relationType": "green",
+      "summary": "梅西+迪马利亚十几年默契"
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "后防双霸",
+      "color": "#56d364",
+      "width": 3,
+      "relationType": "green",
+      "summary": "大马丁+罗梅罗铁血组合"
+    },
+    {
+      "from": 19,
+      "to": 22,
+      "label": "新生代希望",
+      "color": "#56d364",
+      "width": 2,
+      "relationType": "green",
+      "summary": "加纳乔+苏莱后梅西时代"
+    },
+    {
+      "from": 27,
+      "to": 10,
+      "label": "战术核心",
+      "color": "#e3b341",
+      "width": 2.5,
+      "relationType": "gold",
+      "summary": "斯卡洛尼对麦卡利斯特依赖"
+    },
+    {
+      "from": 6,
+      "to": 4,
+      "label": "中卫搭档",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "利马+罗梅罗"
+    },
+    {
+      "from": 17,
+      "to": 11,
+      "label": "后腰轮换",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "帕雷德斯+恩佐"
+    },
+    {
+      "from": 2,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "鲁利是国家队成员"
+    },
+    {
+      "from": 3,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "穆索是国家队成员"
+    },
+    {
+      "from": 5,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "奥塔门迪是国家队成员"
+    },
+    {
+      "from": 7,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "莫利纳是国家队成员"
+    },
+    {
+      "from": 8,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "塔利亚菲科是国家队成员"
+    },
+    {
+      "from": 9,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "阿库尼亚是国家队成员"
+    },
+    {
+      "from": 18,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "洛塞尔索是国家队成员"
+    },
+    {
+      "from": 20,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "尼科冈萨雷斯是国家队成员"
+    },
+    {
+      "from": 23,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "巴列尔迪是国家队成员"
+    },
+    {
+      "from": 24,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "卡博尼是国家队成员"
+    },
+    {
+      "from": 25,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "阿尔马达是国家队成员"
+    },
+    {
+      "from": 26,
+      "to": 27,
+      "label": "队员",
+      "color": "#8b949e",
+      "width": 1.5,
+      "relationType": "white",
+      "summary": "梅迪纳是国家队成员"
+    },
+    {
+      "from": 11,
+      "to": 17,
+      "label": "中场暗战",
+      "color": "#ff4d4f",
+      "width": 2.5,
+      "relationType": "red",
+      "summary": "恩佐与帕雷德斯的后腰主导权之争",
+      "details": "<b>【恩佐VS帕雷德斯：谁才是阿根廷中场的指挥官？】</b><br><br>恩佐以1.2亿转会切尔西后被视为未来十年核心。但帕雷德斯在罗马不甘当替补。2024美洲杯期间帕雷德斯经纪人公开表示莱安德罗值得更多出场时间。<br><br><b>📰 实锤来源：TyC Sports。</b>"
+    },
+    {
+      "from": 6,
+      "to": 5,
+      "label": "曼联老将之争",
+      "color": "#ff4d4f",
+      "width": 2,
+      "relationType": "red",
+      "summary": "利马与奥塔门迪的新老中卫话语权之争",
+      "details": "<b>【利马VS奥塔门迪：铁血防守背后的暗流】</b><br><br>利马在曼联以屠夫式防守著称，奥塔门迪作为功勋老将有着不可撼动的更衣室地位。两人训练中多次因防守站位发生激烈争论。<br><br><b>📰 实锤来源：《奥莱报》。</b>"
+    }
+  ]
+}
